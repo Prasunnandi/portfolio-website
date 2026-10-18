@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasun Nandi — Software Developer & AI Builder</title>
+    <meta name="description" content="Portfolio of Prasun Nandi — Software Developer and Full Stack Builder passionate about Generative AI, LLM Security, and Java/Spring Boot development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- Cursor Glow -->
+    <!-- ============================================ -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ============================================ -->
+    <!-- Particle Canvas Background -->
+    <!-- ============================================ -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- ============================================ -->
+    <!-- Navigation -->
+    <!-- ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>PN<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Journey</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="assets/resume.pdf" target="_blank" class="nav-cta">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+                    <i class="fas fa-sun" id="themeIcon"></i>
+                </button>
+            </div>
+            <div class="nav-mobile-actions">
+                <button class="theme-toggle mobile-theme-toggle" id="mobileThemeToggle" aria-label="Toggle light/dark theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- Hero Section -->
+    <!-- ============================================ -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Open to full-time roles & projects
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name">
+                    <span class="name-char" style="--i:0">P</span><span class="name-char" style="--i:1">r</span><span class="name-char" style="--i:2">a</span><span class="name-char" style="--i:3">s</span><span class="name-char" style="--i:4">u</span><span class="name-char" style="--i:5">n</span>
+                    <span class="name-space"> </span>
+                    <span class="name-char" style="--i:7">N</span><span class="name-char" style="--i:8">a</span><span class="name-char" style="--i:9">n</span><span class="name-char" style="--i:10">d</span><span class="name-char" style="--i:11">i</span>
+                </span>
+            </h1>
+            <div class="hero-roles animate-on-scroll">
+                <span class="role-text" id="typewriter"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description animate-on-scroll">
+                Hey there! I'm a software developer passionate about building with <span class="text-gradient">Generative AI</span>,
+                tinkering with <span class="text-gradient">LLM security</span>, and creating full-stack web apps with
+                <span class="text-gradient">Java & Python</span>. Always curious, constantly building side projects, and turning ideas into clean code.
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#projects" class="btn btn-primary">
+                    <span>See My Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get in Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Tech Tools</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Security Projects (WIP)</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual animate-on-scroll">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">prasun.py</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Prasun Nandi"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"Software Developer"</span>
+        <span class="code-param">self</span>.languages = [
+            <span class="code-string">"Python"</span>, <span class="code-string">"Java"</span>,
+            <span class="code-string">"JavaScript"</span>, <span class="code-string">"SQL"</span>
+        ]
+        <span class="code-param">self</span>.learning_and_building = [
+            <span class="code-string">"LLM Security Side Projects"</span>,
+            <span class="code-string">"GenAI & RAG Apps"</span>,
+            <span class="code-string">"Full-Stack Web Dev"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">say_hi</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">print</span>(<span class="code-string">"Welcome to my portfolio! :)"</span>)</code></pre>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- About Section -->
+    <!-- ============================================ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">A Bit About<br><span class="text-gradient">Who I Am</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        I'm a recent <strong>B.Tech Computer Science & Business Systems</strong> graduate from
+                        <strong>Techno India University, Kolkata</strong>. I enjoy creating software and exploring
+                        how AI can solve real problems — from building multi-agent RAG tools to crafting reliable web applications.
+                    </p>
+                    <p>
+                        Lately, I've been really interested in <strong>LLM Security</strong> — experimenting with prompt injection firewalls,
+                        PII masking gateways, and bot defense mechanisms through hands-on side projects. Alongside AI, I enjoy working with
+                        <strong>Java, Spring Boot, Node.js, and modern web tools</strong> to build clean, functional full-stack apps.
+                    </p>
+                    <p>
+                        When I'm away from the keyboard, you'll find me practicing competitive programming problems, checking out
+                        open-source projects, or learning about the latest developments in AI.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>B.Tech CSBS</strong>
+                                <span>Techno India University (2022–2026)</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <strong>AI for Real-World Applications</strong>
+                                <span>AI4ICPS — IIT Kharagpur</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <strong>Languages</strong>
+                                <span>English · Hindi · Bengali</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <div class="terminal-widget">
+                        <div class="terminal-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span>terminal</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">➜</span>
+                                <span class="terminal-path">~/prasun</span>
+                                <span class="terminal-cmd">cat interests.json</span>
+                            </div>
+                            <div class="terminal-output">
+                                <pre>{
+  "current_focus": [
+    "🛡️ LLM Security Experiments",
+    "🤖 Generative AI & Agents",
+    "☕ Java & Spring Boot",
+    "💻 Full-Stack Web Development"
+  ],
+  "building": "Hands-on projects & side experiments",
+  "status": "Always learning & building 🚀"
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Skills Section -->
+    <!-- ============================================ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-code"></i> Tech Stack</span>
+                <h2 class="section-title">Tools & Tech I<br><span class="text-gradient">Work With</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Generative AI & ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RAG Pipelines</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">AI Agents</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Spring AI</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">ChromaDB</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight">Spring Boot</span>
+                        <span class="skill-tag highlight">Spring Security</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Hibernate</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Maven</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight">Python</span>
+                        <span class="skill-tag highlight">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML / CSS</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">AWS EKS</span>
+                        <span class="skill-tag">Jenkins CI/CD</span>
+                        <span class="skill-tag">Git / GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">ChromaDB</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>LLM Security Experiments</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight">Prompt Injection Defense</span>
+                        <span class="skill-tag highlight">PII / DLP Masking</span>
+                        <span class="skill-tag">Risk Scoring</span>
+                        <span class="skill-tag">Anti-Bot Heuristics</span>
+                        <span class="skill-tag">Safety Gateways</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Projects Section -->
+    <!-- ============================================ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Featured Work</span>
+                <h2 class="section-title">Things I've<br><span class="text-gradient">Built & Working On</span></h2>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="project-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-security">🛡️ AI Security (WIP)</button>
+                <button class="filter-btn" data-filter="fullstack">⚙️ Full-Stack</button>
+                <button class="filter-btn" data-filter="ai-ml">🤖 AI / ML</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project: SecureGuard AI — IN PROGRESS -->
+                <div class="project-card animate-on-scroll" data-category="ai-security">
+                    <div class="project-status wip">
+                        <span class="status-dot pulse"></span> In Development
+                    </div>
+                    <div class="project-icon">🛡️</div>
+                    <h3 class="project-title">SecureGuard AI</h3>
+                    <p class="project-subtitle">AI Risk & Transaction Scoring</p>
+                    <p class="project-desc">
+                        A hands-on risk platform combining feedforward neural networks, rolling behavioral velocity features,
+                        and SMOTE class balancing to experiment with automated fraud and risk detection.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>TensorFlow</span><span>SMOTE</span><span>Scikit-Learn</span><span>Pandas</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/secureguard-ai-risk-platform" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: ShieldLLM — IN PROGRESS -->
+                <div class="project-card animate-on-scroll" data-category="ai-security">
+                    <div class="project-status wip">
+                        <span class="status-dot pulse"></span> In Development
+                    </div>
+                    <div class="project-icon">⚔️</div>
+                    <h3 class="project-title">ShieldLLM</h3>
+                    <p class="project-subtitle">Prompt Injection Security Gateway</p>
+                    <p class="project-desc">
+                        A security gateway project using TF-IDF n-grams and a neural network classifier to detect
+                        and filter out prompt injection attacks, jailbreak patterns, and system overrides before hitting the LLM.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>TensorFlow</span><span>TF-IDF</span><span>NLP</span><span>Gateway</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/shieldllm-prompt-security" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: WebShield AI — IN PROGRESS -->
+                <div class="project-card animate-on-scroll" data-category="ai-security">
+                    <div class="project-status wip">
+                        <span class="status-dot pulse"></span> In Development
+                    </div>
+                    <div class="project-icon">🕸️</div>
+                    <h3 class="project-title">WebShield AI</h3>
+                    <p class="project-subtitle">Anti-Bot & LLM Scraper Defense</p>
+                    <p class="project-desc">
+                        A WAF middleware side project combining User-Agent filtering, hidden honeypots, and unsupervised
+                        IsolationForest anomaly detection to flag automated scrapers and bots.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Scikit-Learn</span><span>IsolationForest</span><span>WAF</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/webshield-llm-defense" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: PrivacyGuard AI — IN PROGRESS -->
+                <div class="project-card animate-on-scroll" data-category="ai-security">
+                    <div class="project-status wip">
+                        <span class="status-dot pulse"></span> In Development
+                    </div>
+                    <div class="project-icon">🔒</div>
+                    <h3 class="project-title">PrivacyGuard AI</h3>
+                    <p class="project-subtitle">LLM PII & Data Masking Gateway</p>
+                    <p class="project-desc">
+                        A privacy gateway combining regular expressions and spaCy NER to identify, redact,
+                        and audit sensitive info (SSNs, cards, personal names) before prompts are sent to external APIs.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>spaCy</span><span>NER</span><span>Regex</span><span>DLP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/privacyguard-llm-dlp" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Agentic RAG Orchestrator -->
+                <div class="project-card animate-on-scroll" data-category="ai-ml">
+                    <div class="project-status completed">
+                        <span class="status-dot"></span> Completed
+                    </div>
+                    <div class="project-icon">🎬</div>
+                    <h3 class="project-title">Agentic RAG Orchestrator</h3>
+                    <p class="project-subtitle">Multimedia Video & Doc Research Tool</p>
+                    <p class="project-desc">
+                        An AI app that transcribes YouTube videos with Whisper, builds vector databases,
+                        and uses LangChain agents to summarize content, answer questions, and perform web research.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>LangChain</span><span>Whisper</span><span>ChromaDB</span><span>Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/agentic-rag-multimedia-orchestrator-" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: URL Shortener -->
+                <div class="project-card animate-on-scroll" data-category="fullstack">
+                    <div class="project-status completed">
+                        <span class="status-dot"></span> Completed
+                    </div>
+                    <div class="project-icon">🔗</div>
+                    <h3 class="project-title">URL Shortener</h3>
+                    <p class="project-subtitle">Full-Stack Distributed Link Shortener</p>
+                    <p class="project-desc">
+                        A fast URL shortener built with Spring Boot 3, Angular 20, Redis cache-aside caching,
+                        PostgreSQL, JWT authentication, and Base62 encoding for fast redirects and click tracking.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span><span>Spring Boot</span><span>Angular</span><span>Redis</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/url-shortener" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Mini Search Engine -->
+                <div class="project-card animate-on-scroll" data-category="fullstack">
+                    <div class="project-status completed">
+                        <span class="status-dot"></span> Completed
+                    </div>
+                    <div class="project-icon">🔍</div>
+                    <h3 class="project-title">Mini Search Engine</h3>
+                    <p class="project-subtitle">Custom Search & Crawler System</p>
+                    <p class="project-desc">
+                        A full-stack search engine built completely from scratch — includes an async web crawler,
+                        natural language stemmer, custom MongoDB inverted index, and BM25 ranking algorithm.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>React</span><span>MongoDB</span><span>BM25</span><span>Cheerio</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/mini-search-engine" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Mini API Gateway -->
+                <div class="project-card animate-on-scroll" data-category="fullstack">
+                    <div class="project-status completed">
+                        <span class="status-dot"></span> Completed
+                    </div>
+                    <div class="project-icon">🚪</div>
+                    <h3 class="project-title">Mini API Gateway</h3>
+                    <p class="project-subtitle">Microservice Gateway & Dashboard</p>
+                    <p class="project-desc">
+                        A lightweight API gateway implementing route forwarding, JWT authentication middleware,
+                        IP rate limiting, and a React dashboard to monitor service status and request flow.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>Express</span><span>React</span><span>MongoDB</span><span>JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/mini-api-gateway" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: AI Code Intelligence -->
+                <div class="project-card animate-on-scroll" data-category="ai-ml">
+                    <div class="project-status completed">
+                        <span class="status-dot"></span> Completed
+                    </div>
+                    <div class="project-icon">🤖</div>
+                    <h3 class="project-title">AI Code Intelligence</h3>
+                    <p class="project-subtitle">Automated Code Review Assistant</p>
+                    <p class="project-desc">
+                        A web tool that analyzes pull requests using LLMs. Built with a Node.js backend connecting to
+                        GitHub APIs for real-time diff extraction and context-aware feedback on code changes.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>MistralAI</span><span>GitHub API</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/ai-code-intelligence" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Customer Segmentation -->
+                <div class="project-card animate-on-scroll" data-category="ai-ml">
+                    <div class="project-status completed">
+                        <span class="status-dot"></span> Completed
+                    </div>
+                    <div class="project-icon">📊</div>
+                    <h3 class="project-title">Customer Segmentation</h3>
+                    <p class="project-subtitle">Clustering & Data Mining Project</p>
+                    <p class="project-desc">
+                        A machine learning project using K-Means clustering to discover customer groups from purchase
+                        patterns. Evaluated using silhouette scores and visual clusters for data-driven insights.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>K-Means</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prasunnandi/customer-segmentation-data-mining-" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Timeline / Journey Section -->
+    <!-- ============================================ -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-road"></i> My Journey</span>
+                <h2 class="section-title">Education &<br><span class="text-gradient">Growth Path</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026 — Present</span>
+                        <h3>Exploring AI Security & Building Side Projects</h3>
+                        <p>Working on hands-on AI safety projects: SecureGuard AI, ShieldLLM, WebShield AI, and PrivacyGuard LLM — experimenting with prompt injection defense, PII masking gateways, and bot detection.</p>
+                        <div class="timeline-tags">
+                            <span>LLM Security</span><span>TensorFlow</span><span>spaCy NER</span><span>WAF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 — 2026</span>
+                        <h3>Full-Stack & AI Projects</h3>
+                        <p>Built 10+ projects exploring multi-agent RAG pipelines, custom search engines, API gateways, and distributed URL shorteners using Spring Boot, React, and Node.js.</p>
+                        <div class="timeline-tags">
+                            <span>Spring Boot</span><span>React</span><span>LangChain</span><span>Microservices</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>AI for Real-World Applications — IIT Kharagpur</h3>
+                        <p>Completed the AI4ICPS certification from IIT Kharagpur, diving into applied machine learning, model evaluation, and practical deployment workflows.</p>
+                        <div class="timeline-tags">
+                            <span>IIT Kharagpur</span><span>Applied ML</span><span>Model Evaluation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 — 2026</span>
+                        <h3>B.Tech — Computer Science & Business Systems</h3>
+                        <p>Techno India University, Kolkata. Built a solid grounding in DSA, OOP, DBMS, OS, Computer Networks, and software engineering fundamentals.</p>
+                        <div class="timeline-tags">
+                            <span>DSA</span><span>DBMS</span><span>OOP</span><span>Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Contact Section -->
+    <!-- ============================================ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+                <h2 class="section-title">Let's Connect &<br><span class="text-gradient">Chat</span></h2>
+                <p class="section-desc">I'm currently looking for entry-level software engineering opportunities. Whether you have an open role, want to collaborate on a project, or just want to chat about tech — feel free to reach out!</p>
+            </div>
+            <div class="contact-grid animate-on-scroll">
+                <a href="mailto:prasunnandi18@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <span>prasunnandi18@gmail.com</span>
+                </a>
+                <a href="https://github.com/Prasunnandi" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <span>Prasunnandi</span>
+                </a>
+                <a href="https://linkedin.com/in/prasunnandi-16-" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <span>prasunnandi-16-</span>
+                </a>
+                <a href="tel:+918240525276" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <span>+91 824-052-5276</span>
+                </a>
+            </div>
+            <div class="contact-cta animate-on-scroll">
+                <a href="mailto:prasunnandi18@gmail.com" class="btn btn-primary btn-large">
+                    <span>Send Me an Email</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Footer -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Designed & Built by <strong>Prasun Nandi</strong> — 2026</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/Prasunnandi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/prasunnandi-16-" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:prasunnandi18@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
