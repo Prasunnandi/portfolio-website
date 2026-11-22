@@ -93,18 +93,23 @@
             </div>
             <div class="hero-stats animate-on-scroll">
                 <div class="stat">
-                    <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Projects Built</span>
+                    <span class="stat-number" data-target="40">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Production Systems</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Tech Tools</span>
+                    <span class="stat-number" data-target="120">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">GitHub Repos</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-target="4">0</span>
-                    <span class="stat-label">Security Projects (WIP)</span>
+                    <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                    <span class="stat-label">Real Benchmark Data</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Career Tracks</span>
                 </div>
             </div>
         </div>
@@ -316,251 +321,1201 @@
         </div>
     </section>
 
-    <!-- ============================================ -->
+    <!-- ===    <!-- ============================================ -->
     <!-- Projects Section -->
     <!-- ============================================ -->
     <section class="section projects" id="projects">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-tag"><i class="fas fa-rocket"></i> Featured Work</span>
+                <span class="section-tag"><i class="fas fa-rocket"></i> Featured Work & Evidence</span>
                 <h2 class="section-title">Things I've<br><span class="text-gradient">Built & Working On</span></h2>
+                <p class="section-desc">Production-grade distributed systems, real-time streaming lakehouses, statistical experimentation engines, and cybersecurity firewalls — verified with real benchmark datasets and evidence-led micro case studies.</p>
+            </div>
+
+            <!-- Project Controls Bar (Search + View Toggle) -->
+            <div class="project-controls-bar animate-on-scroll">
+                <div class="project-search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="projectSearch" class="project-search-input" placeholder="Search 28+ projects by tech, keyword or domain (e.g. ClickHouse, CUPED, Iceberg, Raft, Kafka, Playwright)..." />
+                    <span class="search-count" id="searchCount">Showing 28 of 28</span>
+                </div>
+                <div class="view-mode-toggle">
+                    <button class="view-btn active" id="viewCardsBtn" title="Grid Card View">
+                        <i class="fas fa-th-large"></i> Project Cards
+                    </button>
+                    <button class="view-btn" id="viewMatrixBtn" title="Role-Fit Evidence Matrix">
+                        <i class="fas fa-table"></i> Evidence Matrix
+                    </button>
+                </div>
             </div>
 
             <!-- Filter Tabs -->
-            <div class="project-filters animate-on-scroll">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="ai-security">🛡️ AI Security (WIP)</button>
-                <button class="filter-btn" data-filter="fullstack">⚙️ Full-Stack</button>
-                <button class="filter-btn" data-filter="ai-ml">🤖 AI / ML</button>
+            <div class="project-filters animate-on-scroll" id="projectFiltersContainer">
+                <button class="filter-btn active" data-filter="all">All Projects <span class="filter-count">28</span></button>
+                <button class="filter-btn" data-filter="data-engineering">⚡ Data Engineering <span class="filter-count">3</span></button>
+                <button class="filter-btn" data-filter="cybersecurity">🛡️ Cybersecurity & AppSec <span class="filter-count">6</span></button>
+                <button class="filter-btn" data-filter="product-analytics">📊 Product Analytics & PM <span class="filter-count">6</span></button>
+                <button class="filter-btn" data-filter="finops">📈 FinOps & Business Analytics <span class="filter-count">5</span></button>
+                <button class="filter-btn" data-filter="software-qa">🧪 QA & Chaos Testing <span class="filter-count">3</span></button>
+                <button class="filter-btn" data-filter="ai-ml">🤖 AI & Agentic RAG <span class="filter-count">1</span></button>
+                <button class="filter-btn" data-filter="fullstack">⚙️ Full-Stack & Distributed <span class="filter-count">4</span></button>
             </div>
 
-            <div class="projects-grid">
-
-                <!-- Project: SecureGuard AI — IN PROGRESS -->
-                <div class="project-card animate-on-scroll" data-category="ai-security">
-                    <div class="project-status wip">
-                        <span class="status-dot pulse"></span> In Development
+            <!-- 1. Grid Cards View -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project: CDC ClickHouse Pipeline -->
+                <div class="project-card animate-on-scroll" data-category="data-engineering" data-id="cdc-clickhouse-pipeline" data-keywords="cdc clickhouse pipeline postgresql 15 debezium apache kafka clickhouse replacingmergetree node.js docker real-time olap & data engineer kaggle olist (1,000 orders + wal)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Olist (1,000 orders + WAL)
+                        </div>
                     </div>
-                    <div class="project-icon">🛡️</div>
-                    <h3 class="project-title">SecureGuard AI</h3>
-                    <p class="project-subtitle">AI Risk & Transaction Scoring</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">⚡</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-10ms OLAP Queries</div>
+                    </div>
+                    <h3 class="project-title">CDC ClickHouse Pipeline</h3>
+                    <p class="project-subtitle">Real-Time OLAP & Data Engineer</p>
                     <p class="project-desc">
-                        A hands-on risk platform combining feedforward neural networks, rolling behavioral velocity features,
-                        and SMOTE class balancing to experiment with automated fraud and risk detection.
+                        Distributed Change Data Capture (CDC) streaming pipeline syncing PostgreSQL writes into ClickHouse via Debezium and Apache Kafka with sub-second propagation lag.
                     </p>
                     <div class="project-tech">
-                        <span>Python</span><span>TensorFlow</span><span>SMOTE</span><span>Scikit-Learn</span><span>Pandas</span>
+                        <span>PostgreSQL 15</span><span>Debezium</span><span>Apache Kafka</span><span>ClickHouse</span><span>ReplacingMergeTree</span><span>Node.js</span><span>Docker</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/secureguard-ai-risk-platform" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('cdc-clickhouse-pipeline')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/cdc-clickhouse-pipeline" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: ShieldLLM — IN PROGRESS -->
-                <div class="project-card animate-on-scroll" data-category="ai-security">
-                    <div class="project-status wip">
-                        <span class="status-dot pulse"></span> In Development
+                <!-- Project: Streaming Iceberg Lakehouse -->
+                <div class="project-card animate-on-scroll" data-category="data-engineering" data-id="streaming-iceberg-lakehouse" data-keywords="streaming iceberg lakehouse apache iceberg v2 parquet minio s3 node.js snapshot trees docker lakehouse architect / data engineer nyc yellow taxi (999 parquet trips)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> NYC Yellow Taxi (999 Parquet trips)
+                        </div>
                     </div>
-                    <div class="project-icon">⚔️</div>
-                    <h3 class="project-title">ShieldLLM</h3>
-                    <p class="project-subtitle">Prompt Injection Security Gateway</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">🧊</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> ACID Time-Travel & Snapshot Isolation</div>
+                    </div>
+                    <h3 class="project-title">Streaming Iceberg Lakehouse</h3>
+                    <p class="project-subtitle">Lakehouse Architect / Data Engineer</p>
                     <p class="project-desc">
-                        A security gateway project using TF-IDF n-grams and a neural network classifier to detect
-                        and filter out prompt injection attacks, jailbreak patterns, and system overrides before hitting the LLM.
+                        Streaming Apache Iceberg v2 lakehouse with real-time Parquet partitioning, snapshot isolation, automated bin-packing compaction, and time-travel query resolution.
                     </p>
                     <div class="project-tech">
-                        <span>Python</span><span>TensorFlow</span><span>TF-IDF</span><span>NLP</span><span>Gateway</span>
+                        <span>Apache Iceberg v2</span><span>Parquet</span><span>MinIO S3</span><span>Node.js</span><span>Snapshot Trees</span><span>Docker</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/shieldllm-prompt-security" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('streaming-iceberg-lakehouse')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/streaming-iceberg-lakehouse" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: WebShield AI — IN PROGRESS -->
-                <div class="project-card animate-on-scroll" data-category="ai-security">
-                    <div class="project-status wip">
-                        <span class="status-dot pulse"></span> In Development
+                <!-- Project: Data Quality Contracts & Lineage -->
+                <div class="project-card animate-on-scroll" data-category="data-engineering" data-id="data-quality-contracts-lineage" data-keywords="data quality contracts & lineage opendatacontract openlineage great expectations node.js dag engine react data governance / reliability engineer kaggle financial transactions (949 rows)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Financial Transactions (949 rows)
+                        </div>
                     </div>
-                    <div class="project-icon">🕸️</div>
-                    <h3 class="project-title">WebShield AI</h3>
-                    <p class="project-subtitle">Anti-Bot & LLM Scraper Defense</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">📜</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 15 Great Expectations Rules</div>
+                    </div>
+                    <h3 class="project-title">Data Quality Contracts & Lineage</h3>
+                    <p class="project-subtitle">Data Governance / Reliability Engineer</p>
                     <p class="project-desc">
-                        A WAF middleware side project combining User-Agent filtering, hidden honeypots, and unsupervised
-                        IsolationForest anomaly detection to flag automated scrapers and bots.
+                        Automated data contract governance platform enforcing OpenDataContract v2.2 specifications with Great Expectations assertions and OpenLineage column DAG tracking.
                     </p>
                     <div class="project-tech">
-                        <span>Python</span><span>Scikit-Learn</span><span>IsolationForest</span><span>WAF</span>
+                        <span>OpenDataContract</span><span>OpenLineage</span><span>Great Expectations</span><span>Node.js</span><span>DAG Engine</span><span>React</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/webshield-llm-defense" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('data-quality-contracts-lineage')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/data-quality-contracts-lineage" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: PrivacyGuard AI — IN PROGRESS -->
-                <div class="project-card animate-on-scroll" data-category="ai-security">
-                    <div class="project-status wip">
-                        <span class="status-dot pulse"></span> In Development
+                <!-- Project: Cloud Security Posture Graph -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="cloud-security-posture-graph" data-keywords="cloud security posture graph node.js cytoscape.js aws iam policy engine graph theory terraform cis benchmarks cloud security / cspm architect multi-account aws & gcp topology">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Multi-Account AWS & GCP Topology
+                        </div>
                     </div>
-                    <div class="project-icon">🔒</div>
-                    <h3 class="project-title">PrivacyGuard AI</h3>
-                    <p class="project-subtitle">LLM PII & Data Masking Gateway</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">🕸️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 28 IAM Escalation Paths</div>
+                    </div>
+                    <h3 class="project-title">Cloud Security Posture Graph</h3>
+                    <p class="project-subtitle">Cloud Security / CSPM Architect</p>
                     <p class="project-desc">
-                        A privacy gateway combining regular expressions and spaCy NER to identify, redact,
-                        and audit sensitive info (SSNs, cards, personal names) before prompts are sent to external APIs.
+                        Graph-based Cloud Security Posture Management (CSPM) analyzer detecting 28 AWS IAM privilege escalation paths and calculating transitive blast radius with automated Terraform remediation.
                     </p>
                     <div class="project-tech">
-                        <span>Python</span><span>spaCy</span><span>NER</span><span>Regex</span><span>DLP</span>
+                        <span>Node.js</span><span>Cytoscape.js</span><span>AWS IAM Policy Engine</span><span>Graph Theory</span><span>Terraform</span><span>CIS Benchmarks</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/privacyguard-llm-dlp" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('cloud-security-posture-graph')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/cloud-security-posture-graph" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Agentic RAG Orchestrator -->
-                <div class="project-card animate-on-scroll" data-category="ai-ml">
-                    <div class="project-status completed">
-                        <span class="status-dot"></span> Completed
+                <!-- Project: SIEM MITRE Log Correlation -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="siem-mitre-log-correlation" data-keywords="siem mitre log correlation node.js sigma rules mitre att&ck lucene filters sliding windows react soc analyst / detection engineer splunk bots v3 (10,000+ attack logs)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Splunk BOTS v3 (10,000+ attack logs)
+                        </div>
                     </div>
-                    <div class="project-icon">🎬</div>
-                    <h3 class="project-title">Agentic RAG Orchestrator</h3>
-                    <p class="project-subtitle">Multimedia Video & Doc Research Tool</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">🎯</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-Second Correlation Window</div>
+                    </div>
+                    <h3 class="project-title">SIEM MITRE Log Correlation</h3>
+                    <p class="project-subtitle">SOC Analyst / Detection Engineer</p>
                     <p class="project-desc">
-                        An AI app that transcribes YouTube videos with Whisper, builds vector databases,
-                        and uses LangChain agents to summarize content, answer questions, and perform web research.
+                        Real-time threat detection engine compiling Sigma detection rules into streaming filters, mapping attack techniques to the MITRE ATT&CK matrix over a sliding temporal window.
                     </p>
                     <div class="project-tech">
-                        <span>Python</span><span>LangChain</span><span>Whisper</span><span>ChromaDB</span><span>Streamlit</span>
+                        <span>Node.js</span><span>Sigma Rules</span><span>MITRE ATT&CK</span><span>Lucene Filters</span><span>Sliding Windows</span><span>React</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/agentic-rag-multimedia-orchestrator-" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('siem-mitre-log-correlation')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/siem-mitre-log-correlation" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: URL Shortener -->
-                <div class="project-card animate-on-scroll" data-category="fullstack">
-                    <div class="project-status completed">
-                        <span class="status-dot"></span> Completed
+                <!-- Project: SBOM Vulnerability Auditor -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="sbom-vulnerability-auditor" data-keywords="sbom vulnerability auditor cyclonedx spdx 2.3 nvd cve api epss scoring cisa kev node.js appsec & software supply chain cyclonedx & spdx manifests (nvd cve)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> CycloneDX & SPDX Manifests (NVD CVE)
+                        </div>
                     </div>
-                    <div class="project-icon">🔗</div>
-                    <h3 class="project-title">URL Shortener</h3>
-                    <p class="project-subtitle">Full-Stack Distributed Link Shortener</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">📦</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> EPSS Exploit Prediction Integration</div>
+                    </div>
+                    <h3 class="project-title">SBOM Vulnerability Auditor</h3>
+                    <p class="project-subtitle">AppSec & Software Supply Chain</p>
                     <p class="project-desc">
-                        A fast URL shortener built with Spring Boot 3, Angular 20, Redis cache-aside caching,
-                        PostgreSQL, JWT authentication, and Base62 encoding for fast redirects and click tracking.
+                        Automated Software Bill of Materials (SBOM) auditor resolving transitive dependency trees, calculating EPSS weaponization probabilities, and enforcing license compliance.
                     </p>
                     <div class="project-tech">
-                        <span>Java</span><span>Spring Boot</span><span>Angular</span><span>Redis</span><span>PostgreSQL</span>
+                        <span>CycloneDX</span><span>SPDX 2.3</span><span>NVD CVE API</span><span>EPSS Scoring</span><span>CISA KEV</span><span>Node.js</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/url-shortener" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('sbom-vulnerability-auditor')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/sbom-vulnerability-auditor" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Mini Search Engine -->
-                <div class="project-card animate-on-scroll" data-category="fullstack">
-                    <div class="project-status completed">
-                        <span class="status-dot"></span> Completed
+                <!-- Project: A/B Testing CUPED Platform -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="ab-testing-cuped-platform" data-keywords="a/b testing cuped platform node.js cuped theta welch's t-test power analysis chi-square srm recharts product analyst / experimentation kaggle cookie cats (90,189 real players)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Cookie Cats (90,189 real players)
+                        </div>
                     </div>
-                    <div class="project-icon">🔍</div>
-                    <h3 class="project-title">Mini Search Engine</h3>
-                    <p class="project-subtitle">Custom Search & Crawler System</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">🧪</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 34% Variance Reduction</div>
+                    </div>
+                    <h3 class="project-title">A/B Testing CUPED Platform</h3>
+                    <p class="project-subtitle">Product Analyst / Experimentation</p>
                     <p class="project-desc">
-                        A full-stack search engine built completely from scratch — includes an async web crawler,
-                        natural language stemmer, custom MongoDB inverted index, and BM25 ranking algorithm.
+                        Industrial A/B experimentation platform implementing CUPED variance reduction, Welch's unequal variances t-test, sequential alpha spending, and automated SRM detection.
                     </p>
                     <div class="project-tech">
-                        <span>Node.js</span><span>React</span><span>MongoDB</span><span>BM25</span><span>Cheerio</span>
+                        <span>Node.js</span><span>CUPED Theta</span><span>Welch's t-test</span><span>Power Analysis</span><span>Chi-Square SRM</span><span>Recharts</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/mini-search-engine" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('ab-testing-cuped-platform')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/ab-testing-cuped-platform" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Mini API Gateway -->
-                <div class="project-card animate-on-scroll" data-category="fullstack">
-                    <div class="project-status completed">
-                        <span class="status-dot"></span> Completed
+                <!-- Project: Funnel Conversion Attribution -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="funnel-conversion-attribution" data-keywords="funnel conversion attribution node.js markov chains multi-touch attribution sankey flow roas calculator redis growth & marketing analyst kaggle user journeys (25,000 paths)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle User Journeys (25,000 paths)
+                        </div>
                     </div>
-                    <div class="project-icon">🚪</div>
-                    <h3 class="project-title">Mini API Gateway</h3>
-                    <p class="project-subtitle">Microservice Gateway & Dashboard</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">🔀</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> First-Order Markov Matrix</div>
+                    </div>
+                    <h3 class="project-title">Funnel Conversion Attribution</h3>
+                    <p class="project-subtitle">Growth & Marketing Analyst</p>
                     <p class="project-desc">
-                        A lightweight API gateway implementing route forwarding, JWT authentication middleware,
-                        IP rate limiting, and a React dashboard to monitor service status and request flow.
+                        Multi-touch marketing attribution platform comparing First-Touch, Last-Touch, Linear, Time-Decay, and Markov Chain models with interactive SVG Sankey drop-off funnels.
                     </p>
                     <div class="project-tech">
-                        <span>Node.js</span><span>Express</span><span>React</span><span>MongoDB</span><span>JWT</span>
+                        <span>Node.js</span><span>Markov Chains</span><span>Multi-Touch Attribution</span><span>Sankey Flow</span><span>ROAS Calculator</span><span>Redis</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/mini-api-gateway" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('funnel-conversion-attribution')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/funnel-conversion-attribution" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: AI Code Intelligence -->
-                <div class="project-card animate-on-scroll" data-category="ai-ml">
-                    <div class="project-status completed">
-                        <span class="status-dot"></span> Completed
+                <!-- Project: Retention & Aha-Moment Clustering -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="retention-aha-clustering" data-keywords="retention & aha-moment clustering node.js k-means clustering information gain cohort heatmap kaplan-meier recharts product analyst / growth engineer ibm / kaggle telco churn (7,043 customers)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> IBM / Kaggle Telco Churn (7,043 customers)
+                        </div>
                     </div>
-                    <div class="project-icon">🤖</div>
-                    <h3 class="project-title">AI Code Intelligence</h3>
-                    <p class="project-subtitle">Automated Code Review Assistant</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">💡</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 4.1x Retention Lift Discovered</div>
+                    </div>
+                    <h3 class="project-title">Retention & Aha-Moment Clustering</h3>
+                    <p class="project-subtitle">Product Analyst / Growth Engineer</p>
                     <p class="project-desc">
-                        A web tool that analyzes pull requests using LLMs. Built with a Node.js backend connecting to
-                        GitHub APIs for real-time diff extraction and context-aware feedback on code changes.
+                        Growth intelligence platform utilizing K-Means behavioral clustering to uncover Day-7 Aha moments, rendering 90-day triangular cohort retention heatmaps.
                     </p>
                     <div class="project-tech">
-                        <span>Node.js</span><span>MistralAI</span><span>GitHub API</span><span>JavaScript</span>
+                        <span>Node.js</span><span>K-Means Clustering</span><span>Information Gain</span><span>Cohort Heatmap</span><span>Kaplan-Meier</span><span>Recharts</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/ai-code-intelligence" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('retention-aha-clustering')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/retention-aha-clustering" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Customer Segmentation -->
-                <div class="project-card animate-on-scroll" data-category="ai-ml">
-                    <div class="project-status completed">
-                        <span class="status-dot"></span> Completed
+                <!-- Project: SaaS Unit Economics Center -->
+                <div class="project-card animate-on-scroll" data-category="finops" data-id="saas-unit-economics-center" data-keywords="saas unit economics center node.js financial waterfalls saas metrics rule of 40 cac payback recharts data business analyst / finance b2b saas billing (1,469 subscription events)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> B2B SaaS Billing (1,469 subscription events)
+                        </div>
                     </div>
-                    <div class="project-icon">📊</div>
-                    <h3 class="project-title">Customer Segmentation</h3>
-                    <p class="project-subtitle">Clustering & Data Mining Project</p>
+                    <div class="project-header-row">
+                        <div class="project-icon">📊</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Rule of 40 & Magic Number</div>
+                    </div>
+                    <h3 class="project-title">SaaS Unit Economics Center</h3>
+                    <p class="project-subtitle">Data Business Analyst / Finance</p>
                     <p class="project-desc">
-                        A machine learning project using K-Means clustering to discover customer groups from purchase
-                        patterns. Evaluated using silhouette scores and visual clusters for data-driven insights.
+                        Executive financial command center decomposing monthly ARR/MRR waterfalls, calculating Rule of 40, Magic Number, and cohort Net Revenue Retention (NRR).
                     </p>
                     <div class="project-tech">
-                        <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>K-Means</span>
+                        <span>Node.js</span><span>Financial Waterfalls</span><span>SaaS Metrics</span><span>Rule of 40</span><span>CAC Payback</span><span>Recharts</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Prasunnandi/customer-segmentation-data-mining-" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('saas-unit-economics-center')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/saas-unit-economics-center" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
+                <!-- Project: Retail Margin Leakage Detective -->
+                <div class="project-card animate-on-scroll" data-category="finops" data-id="retail-margin-leakage-detective" data-keywords="retail margin leakage detective node.js loss tree decomposition superstore benchmark choropleth maps excel exporter data business analyst / operations tableau superstore (9,995 line items)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Tableau Superstore (9,995 line items)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🔍</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Root-Cause Loss Tree</div>
+                    </div>
+                    <h3 class="project-title">Retail Margin Leakage Detective</h3>
+                    <p class="project-subtitle">Data Business Analyst / Operations</p>
+                    <p class="project-desc">
+                        Profit margin forensics system decomposing margin erosion across discounting thresholds, return handling fees, and freight shipping anomalies.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>Loss Tree Decomposition</span><span>Superstore Benchmark</span><span>Choropleth Maps</span><span>Excel Exporter</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('retail-margin-leakage-detective')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/retail-margin-leakage-detective" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Customer RFM & CLV Simulator -->
+                <div class="project-card animate-on-scroll" data-category="finops" data-id="customer-rfm-clv-simulator" data-keywords="customer rfm & clv simulator node.js pareto/nbd gamma-gamma rfm scoring clv forecast recharts data business analyst / crm analytics kaggle online retail (5,882 accounts)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Online Retail (5,882 accounts)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">👥</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Pareto/NBD & Gamma-Gamma</div>
+                    </div>
+                    <h3 class="project-title">Customer RFM & CLV Simulator</h3>
+                    <p class="project-subtitle">Data Business Analyst / CRM Analytics</p>
+                    <p class="project-desc">
+                        Customer lifetime value simulator combining 11-segment RFM quintile scoring with probabilistic Pareto/NBD and Gamma-Gamma predictive CLV models.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>Pareto/NBD</span><span>Gamma-Gamma</span><span>RFM Scoring</span><span>CLV Forecast</span><span>Recharts</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('customer-rfm-clv-simulator')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/customer-rfm-clv-simulator" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Self-Healing Test Automation -->
+                <div class="project-card animate-on-scroll" data-category="software-qa" data-id="self-healing-test-automation" data-keywords="self-healing test automation node.js playwright ast parsing levenshtein heuristics custom reporter docker qa automation / software tester kaggle dom mutation traces (5,000 logs)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle DOM Mutation Traces (5,000 logs)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🩹</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 89.4% Autonomous Heal Rate</div>
+                    </div>
+                    <h3 class="project-title">Self-Healing Test Automation</h3>
+                    <p class="project-subtitle">QA Automation / Software Tester</p>
+                    <p class="project-desc">
+                        Autonomous self-healing E2E test engine in Playwright that dynamically repairs broken DOM locators using AST tree-matching and composite heuristic similarity scoring.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>Playwright</span><span>AST Parsing</span><span>Levenshtein Heuristics</span><span>Custom Reporter</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('self-healing-test-automation')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/self-healing-test-automation" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Chaos & Load Testing Harness -->
+                <div class="project-card animate-on-scroll" data-category="software-qa" data-id="chaos-load-testing-harness" data-keywords="chaos & load testing harness go / node.js k6 / locust hdrhistogram toxiproxy docker sla gate cli performance engineer / qa production access logs (20,000 traces)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Production Access Logs (20,000 traces)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">⚡</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 10K RPS with HdrHistogram P99 Gate</div>
+                    </div>
+                    <h3 class="project-title">Chaos & Load Testing Harness</h3>
+                    <p class="project-subtitle">Performance Engineer / QA</p>
+                    <p class="project-desc">
+                        Distributed API load testing harness generating 10K+ RPS with Toxiproxy network latency injection and sub-millisecond HdrHistogram tail latency tracking.
+                    </p>
+                    <div class="project-tech">
+                        <span>Go / Node.js</span><span>k6 / Locust</span><span>HdrHistogram</span><span>Toxiproxy</span><span>Docker</span><span>SLA Gate CLI</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('chaos-load-testing-harness')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/chaos-load-testing-harness" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Consumer Contract Testing Grid -->
+                <div class="project-card animate-on-scroll" data-category="software-qa" data-id="consumer-contract-testing-grid" data-keywords="consumer contract testing grid pact v4 node.js openapi 3.0 json schema ast webhook broker express api qa / integration engineer 3-tier microservice pact v4 matrix">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> 3-Tier Microservice Pact v4 Matrix
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">📋</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Breaking Change AST Diffing</div>
+                    </div>
+                    <h3 class="project-title">Consumer Contract Testing Grid</h3>
+                    <p class="project-subtitle">API QA / Integration Engineer</p>
+                    <p class="project-desc">
+                        Bi-directional consumer-driven contract testing grid utilizing Pact v4 specification, AST semantic schema diffing, and automated can-i-deploy verification gates.
+                    </p>
+                    <div class="project-tech">
+                        <span>Pact v4</span><span>Node.js</span><span>OpenAPI 3.0</span><span>JSON Schema AST</span><span>Webhook Broker</span><span>Express</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('consumer-contract-testing-grid')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/consumer-contract-testing-grid" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Feature Flag Rollout Lab -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="feature-flag-rollout-lab" data-keywords="feature flag rollout lab node.js murmurhash3 canary deployment metrics guardrails client sdk react technical pm / release engineer production canary release logs (25 runs)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Production Canary Release Logs (25 runs)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🚩</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Automated 2% Error Kill-Switch</div>
+                    </div>
+                    <h3 class="project-title">Feature Flag Rollout Lab</h3>
+                    <p class="project-subtitle">Technical PM / Release Engineer</p>
+                    <p class="project-desc">
+                        Canary feature flag platform featuring MurmurHash3 deterministic user bucketing, attribute rules targeting, and automated error-rate kill-switches.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>MurmurHash3</span><span>Canary Deployment</span><span>Metrics Guardrails</span><span>Client SDK</span><span>React</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('feature-flag-rollout-lab')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/feature-flag-rollout-lab" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Voice of Customer Prioritization -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="voice-of-customer-prioritization" data-keywords="voice of customer prioritization node.js tf-idf nlp sentiment clustering rice scoring linear/jira api react product manager / product ops app store reviews (10,000 entries)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> App Store Reviews (10,000 entries)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🗣️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> ARR-Weighted RICE Scoring</div>
+                    </div>
+                    <h3 class="project-title">Voice of Customer Prioritization</h3>
+                    <p class="project-subtitle">Product Manager / Product Ops</p>
+                    <p class="project-desc">
+                        Customer feedback intelligence platform applying NLP sentiment clustering and RICE prioritization to automate bug surge detection and Jira/Linear ticket dispatch.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>TF-IDF NLP</span><span>Sentiment Clustering</span><span>RICE Scoring</span><span>Linear/Jira API</span><span>React</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('voice-of-customer-prioritization')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/voice-of-customer-prioritization" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Experimentation Roadmap Simulator -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="experimentation-roadmap-simulator" data-keywords="experimentation roadmap simulator node.js monte carlo engine agile velocity critical path roi sensitivity recharts product manager / strategy jira sprint velocity (2-year history)">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Jira Sprint Velocity (2-Year History)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">📅</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 10,000 Monte Carlo Iterations</div>
+                    </div>
+                    <h3 class="project-title">Experimentation Roadmap Simulator</h3>
+                    <p class="project-subtitle">Product Manager / Strategy</p>
+                    <p class="project-desc">
+                        Stochastic engineering capacity and roadmap forecasting engine running 10,000 Monte Carlo simulations to calculate P10/P50/P90 launch confidence dates and ROI risk.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>Monte Carlo Engine</span><span>Agile Velocity</span><span>Critical Path</span><span>ROI Sensitivity</span><span>Recharts</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('experimentation-roadmap-simulator')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/experimentation-roadmap-simulator" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Raft Consensus Key-Value Store -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="Distributed-Key-Value-Store-with-Raft-Consensus" data-keywords="raft consensus key-value store go / python raft protocol rpc networking write-ahead log state machines distributed systems engineer simulated split-brain partition tests">
+                    <div class="project-meta-row">
+                        <div class="project-status wip">
+                            <span class="status-dot "></span> CORE RESEARCH
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Simulated Split-Brain Partition Tests
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🗳️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Majority Quorum Guarantees</div>
+                    </div>
+                    <h3 class="project-title">Raft Consensus Key-Value Store</h3>
+                    <p class="project-subtitle">Distributed Systems Engineer</p>
+                    <p class="project-desc">
+                        Fault-tolerant distributed key-value store implementing the Raft consensus protocol from scratch with randomized leader elections, write-ahead logs, and partition quorums.
+                    </p>
+                    <div class="project-tech">
+                        <span>Go / Python</span><span>Raft Protocol</span><span>RPC Networking</span><span>Write-Ahead Log</span><span>State Machines</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('Distributed-Key-Value-Store-with-Raft-Consensus')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/Distributed-Key-Value-Store-with-Raft-Consensus" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Low-Latency Order Matching Engine -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="Low-Latency-Limit-Order-Matching-Engine" data-keywords="low-latency order matching engine c++ / go b-tree price ladders doubly linked lists lock-free queues benchmarking quantitative systems developer synthetic market l2 tick feeds">
+                    <div class="project-meta-row">
+                        <div class="project-status wip">
+                            <span class="status-dot "></span> CORE RESEARCH
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Synthetic Market L2 Tick Feeds
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">📈</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-Microsecond Price-Time Priority</div>
+                    </div>
+                    <h3 class="project-title">Low-Latency Order Matching Engine</h3>
+                    <p class="project-subtitle">Quantitative Systems Developer</p>
+                    <p class="project-desc">
+                        Sub-microsecond electronic trading order book matching Limit, Market, and Cancel orders using B-tree price ladders and zero-heap-allocation memory ring buffers.
+                    </p>
+                    <div class="project-tech">
+                        <span>C++ / Go</span><span>B-Tree Price Ladders</span><span>Doubly Linked Lists</span><span>Lock-Free Queues</span><span>Benchmarking</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('Low-Latency-Limit-Order-Matching-Engine')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/Low-Latency-Limit-Order-Matching-Engine" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Double-Entry Digital Wallet Ledger -->
+                <div class="project-card animate-on-scroll" data-category="finops" data-id="digital-wallet-ledger" data-keywords="double-entry digital wallet ledger node.js double-entry bookkeeping sha-256 hash chain acid locks reconciliation fintech / core banking engineer fintech wallet ledger transactions">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Fintech Wallet Ledger Transactions
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">💳</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Zero-Sum Balance Integrity</div>
+                    </div>
+                    <h3 class="project-title">Double-Entry Digital Wallet Ledger</h3>
+                    <p class="project-subtitle">Fintech / Core Banking Engineer</p>
+                    <p class="project-desc">
+                        High-throughput financial ledger enforcing double-entry bookkeeping (Assets = Liabilities + Equity) with chained cryptographic SHA-256 blocks and atomic ACID locks.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>Double-Entry Bookkeeping</span><span>SHA-256 Hash Chain</span><span>ACID Locks</span><span>Reconciliation</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('digital-wallet-ledger')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/digital-wallet-ledger" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: AI Document Assistant (Spring RAG) -->
+                <div class="project-card animate-on-scroll" data-category="ai-ml" data-id="ai-document-assistant-java" data-keywords="ai document assistant (spring rag) java 21 spring boot 3 pgvector hybrid rrf semantic chunking react ai engineer / full-stack java enterprise technical manuals corpus">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Enterprise Technical Manuals Corpus
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">☕</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Dense + Sparse Hybrid RRF Search</div>
+                    </div>
+                    <h3 class="project-title">AI Document Assistant (Spring RAG)</h3>
+                    <p class="project-subtitle">AI Engineer / Full-Stack Java</p>
+                    <p class="project-desc">
+                        Enterprise Spring Boot 3 RAG platform integrating PGVector embeddings, semantic text chunking, and Reciprocal Rank Fusion combining BM25 keyword search with dense vector similarity.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java 21</span><span>Spring Boot 3</span><span>PGVector</span><span>Hybrid RRF</span><span>Semantic Chunking</span><span>React</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('ai-document-assistant-java')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/ai-document-assistant-java" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Enterprise Workflow Automation -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="enterprise-workflow-automation" data-keywords="enterprise workflow automation java / node.js bpmn 2.0 engine react flow cryptographic audit sla timers docker systems architect / workflow engineer multi-tier corporate workflows">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Multi-Tier Corporate Workflows
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🔄</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> BPMN 2.0 State Machine</div>
+                    </div>
+                    <h3 class="project-title">Enterprise Workflow Automation</h3>
+                    <p class="project-subtitle">Systems Architect / Workflow Engineer</p>
+                    <p class="project-desc">
+                        Enterprise BPMN 2.0 workflow orchestration engine with a React Flow visual canvas, multi-level conditional approvals, automated SLA escalation timers, and cryptographic audit logging.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java / Node.js</span><span>BPMN 2.0 Engine</span><span>React Flow</span><span>Cryptographic Audit</span><span>SLA Timers</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('enterprise-workflow-automation')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/enterprise-workflow-automation" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Fleet Logistics Operations Suite -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="fleet-logistics-operations-suite" data-keywords="fleet logistics operations suite java / node.js leaflet maps obd-ii telematics vrp dijkstra geofencing docker logistics & enterprise / full-stack commercial long-haul telematics">
+                    <div class="project-meta-row">
+                        <div class="project-status live">
+                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Commercial Long-Haul Telematics
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🚛</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Dijkstra VRP Route Solver</div>
+                    </div>
+                    <h3 class="project-title">Fleet Logistics Operations Suite</h3>
+                    <p class="project-subtitle">Logistics & Enterprise / Full-Stack</p>
+                    <p class="project-desc">
+                        Commercial fleet telematics and logistics platform processing simulated OBD-II GPS streams, solving constrained Vehicle Routing Problems (VRP), and monitoring driver safety scorecards.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java / Node.js</span><span>Leaflet Maps</span><span>OBD-II Telematics</span><span>VRP Dijkstra</span><span>Geofencing</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('fleet-logistics-operations-suite')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/fleet-logistics-operations-suite" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Nagrik Setu Civic Platform -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="Nagrik-Setu" data-keywords="nagrik setu civic platform typescript next.js prisma ai audio processing postgresql tailwind css full-stack / civic ai engineer geo-tagged grievance streams">
+                    <div class="project-meta-row">
+                        <div class="project-status wip">
+                            <span class="status-dot "></span> CORE RESEARCH
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Geo-Tagged Grievance Streams
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🏛️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Multimodal Voice & Image Triage</div>
+                    </div>
+                    <h3 class="project-title">Nagrik Setu Civic Platform</h3>
+                    <p class="project-subtitle">Full-Stack / Civic AI Engineer</p>
+                    <p class="project-desc">
+                        AI-powered multimodal civic accountability platform in TypeScript allowing citizens to submit geo-tagged community grievances via voice and images with automated municipal routing.
+                    </p>
+                    <div class="project-tech">
+                        <span>TypeScript</span><span>Next.js</span><span>Prisma</span><span>AI Audio Processing</span><span>PostgreSQL</span><span>Tailwind CSS</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('Nagrik-Setu')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/Nagrik-Setu" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: ShieldLLM Prompt Security -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="shieldllm-prompt-security" data-keywords="shieldllm prompt security python tensorflow tf-idf n-grams nlp fastapi security gateway ai security / machine learning adversarial jailbreak corpus">
+                    <div class="project-meta-row">
+                        <div class="project-status wip">
+                            <span class="status-dot "></span> CORE RESEARCH
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Adversarial Jailbreak Corpus
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">⚔️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> TF-IDF N-Gram Defense</div>
+                    </div>
+                    <h3 class="project-title">ShieldLLM Prompt Security</h3>
+                    <p class="project-subtitle">AI Security / Machine Learning</p>
+                    <p class="project-desc">
+                        Machine learning input firewall combining TF-IDF n-gram vectorization with a trained neural classifier to detect and neutralize adversarial prompt injections and jailbreak attacks.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>TensorFlow</span><span>TF-IDF N-grams</span><span>NLP</span><span>FastAPI</span><span>Security Gateway</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('shieldllm-prompt-security')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/shieldllm-prompt-security" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: PrivacyGuard LLM DLP -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="privacyguard-llm-dlp" data-keywords="privacyguard llm dlp python spacy ner custom regex cryptographic vault fastapi presidio ai security / data privacy enterprise pii audit logs">
+                    <div class="project-meta-row">
+                        <div class="project-status wip">
+                            <span class="status-dot "></span> CORE RESEARCH
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Enterprise PII Audit Logs
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🔒</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-12ms Reversible Redaction</div>
+                    </div>
+                    <h3 class="project-title">PrivacyGuard LLM DLP</h3>
+                    <p class="project-subtitle">AI Security / Data Privacy</p>
+                    <p class="project-desc">
+                        Data loss prevention proxy combining regular expressions and spaCy NER to identify, redact, and cryptographically tokenize sensitive PII before prompts reach third-party LLMs.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>spaCy NER</span><span>Custom Regex</span><span>Cryptographic Vault</span><span>FastAPI</span><span>Presidio</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('privacyguard-llm-dlp')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/privacyguard-llm-dlp" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: URL Shortener (Distributed) -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="url-shortener" data-keywords="url shortener (distributed) java 17 spring boot 3 angular 20 redis cache postgresql base62 backend engineer / java specialist simulated high-concurrency traffic">
+                    <div class="project-meta-row">
+                        <div class="project-status wip">
+                            <span class="status-dot "></span> CORE RESEARCH
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Simulated High-Concurrency Traffic
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🔗</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-5ms Cache-Aside Redirect</div>
+                    </div>
+                    <h3 class="project-title">URL Shortener (Distributed)</h3>
+                    <p class="project-subtitle">Backend Engineer / Java Specialist</p>
+                    <p class="project-desc">
+                        Production-grade URL shortener built in Spring Boot 3 and Angular 20 utilizing Base62 cryptographic encoding and Redis cache-aside architecture for sub-5ms redirects.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java 17</span><span>Spring Boot 3</span><span>Angular 20</span><span>Redis Cache</span><span>PostgreSQL</span><span>Base62</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('url-shortener')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/url-shortener" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <!-- 2. Evidence Matrix Table View (Initially Hidden) -->
+            <div class="evidence-matrix-container" id="evidenceMatrixContainer" style="display: none;">
+                <div class="matrix-card">
+                    <div class="matrix-header">
+                        <div>
+                            <h3><i class="fas fa-bullseye"></i> The Evidence Matrix: Target Role-Fit Map</h3>
+                            <p>Systematic evidence connecting real project code, benchmark datasets, and architectural lessons to target engineering roles.</p>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="evidence-table">
+                            <thead>
+                                <tr>
+                                    <th>Target Role & Track</th>
+                                    <th>Role Signal / Metric</th>
+                                    <th>Primary Evidence Repo</th>
+                                    <th>Proof Artefact</th>
+                                    <th>Active Learning Takeaway</th>
+                                    <th>Case Study</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                        <tr>
+                            <td><span class="role-badge">⚡ Data Engineering</span><br><strong>Real-Time OLAP & Data Engineer</strong></td>
+                            <td><strong>Sub-10ms OLAP Queries</strong><br><span class="text-muted">Kaggle Olist (1,000 orders + WAL)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/cdc-clickhouse-pipeline" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> cdc-clickhouse-pipeline</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Ingested 1,000 real Kaggle Olist order lifecycle events + Debezium WAL envelope in da...</small></td>
+                            <td><small>Discovered that ReplacingMergeTree deduplicates asynchronously during background merges; optimized query patte...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('cdc-clickhouse-pipeline')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚡ Data Engineering</span><br><strong>Lakehouse Architect / Data Engineer</strong></td>
+                            <td><strong>ACID Time-Travel & Snapshot Isolation</strong><br><span class="text-muted">NYC Yellow Taxi (999 Parquet trips)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/streaming-iceberg-lakehouse" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> streaming-iceberg-lakehouse</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Streamed 999 real NYC Yellow Taxi trip records in data/; built interactive SVG commit...</small></td>
+                            <td><small>Learned that high-frequency streaming writes create manifest file bloat; implemented automated snapshot expira...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('streaming-iceberg-lakehouse')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚡ Data Engineering</span><br><strong>Data Governance / Reliability Engineer</strong></td>
+                            <td><strong>15 Great Expectations Rules</strong><br><span class="text-muted">Kaggle Financial Transactions (949 rows)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/data-quality-contracts-lineage" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> data-quality-contracts-lineage</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Audited 949 real Kaggle credit card transaction records; built interactive column-lev...</small></td>
+                            <td><small>Learned that schema drift checks must be evaluated before merging database pull requests; built a git pre-comm...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('data-quality-contracts-lineage')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>Cloud Security / CSPM Architect</strong></td>
+                            <td><strong>28 IAM Escalation Paths</strong><br><span class="text-muted">Multi-Account AWS & GCP Topology</span></td>
+                            <td><a href="https://github.com/Prasunnandi/cloud-security-posture-graph" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> cloud-security-posture-graph</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Ingested authentic multi-account cloud topology JSON in data/; captured 1440x900 inte...</small></td>
+                            <td><small>Discovered that benign-looking individual permissions (such as iam:PassRole combined with ec2:RunInstances) cr...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('cloud-security-posture-graph')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>SOC Analyst / Detection Engineer</strong></td>
+                            <td><strong>Sub-Second Correlation Window</strong><br><span class="text-muted">Splunk BOTS v3 (10,000+ attack logs)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/siem-mitre-log-correlation" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> siem-mitre-log-correlation</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Correlated 10,000+ authentic attack events from Splunk Boss of the SOC (BOTS) v3 in d...</small></td>
+                            <td><small>Realized that individual authentication failures appear harmless; correlating them with subsequent PowerShell ...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('siem-mitre-log-correlation')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>AppSec & Software Supply Chain</strong></td>
+                            <td><strong>EPSS Exploit Prediction Integration</strong><br><span class="text-muted">CycloneDX & SPDX Manifests (NVD CVE)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/sbom-vulnerability-auditor" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> sbom-vulnerability-auditor</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Audited authentic enterprise CycloneDX manifests in data/; generated interactive hier...</small></td>
+                            <td><small>Discovered that prioritizing vulnerabilities by EPSS exploit likelihood reduced vulnerability remediation back...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('sbom-vulnerability-auditor')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📊 Product Analytics & PM</span><br><strong>Product Analyst / Experimentation</strong></td>
+                            <td><strong>34% Variance Reduction</strong><br><span class="text-muted">Kaggle Cookie Cats (90,189 real players)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/ab-testing-cuped-platform" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> ab-testing-cuped-platform</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Processed 90,189 real player records from the Kaggle Cookie Cats dataset in data/; ge...</small></td>
+                            <td><small>Demonstrated that CUPED reduced metric variance by 34%, enabling the experimentation team to detect subtle con...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('ab-testing-cuped-platform')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📊 Product Analytics & PM</span><br><strong>Growth & Marketing Analyst</strong></td>
+                            <td><strong>First-Order Markov Matrix</strong><br><span class="text-muted">Kaggle User Journeys (25,000 paths)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/funnel-conversion-attribution" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> funnel-conversion-attribution</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Loaded 25,000 real customer journey paths in data/; built interactive SVG Sankey flow...</small></td>
+                            <td><small>Discovered that organic search had a 2.4x higher true contribution to final conversion than credited by Last-T...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('funnel-conversion-attribution')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📊 Product Analytics & PM</span><br><strong>Product Analyst / Growth Engineer</strong></td>
+                            <td><strong>4.1x Retention Lift Discovered</strong><br><span class="text-muted">IBM / Kaggle Telco Churn (7,043 customers)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/retention-aha-clustering" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> retention-aha-clustering</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Analyzed 7,043 real customer rows from the IBM/Kaggle Telco Churn dataset in data/; b...</small></td>
+                            <td><small>Discovered that users completing 3 specific collaborative workflow actions within 72 hours exhibited a 4.1x hi...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('retention-aha-clustering')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 FinOps & Business Analytics</span><br><strong>Data Business Analyst / Finance</strong></td>
+                            <td><strong>Rule of 40 & Magic Number</strong><br><span class="text-muted">B2B SaaS Billing (1,469 subscription events)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/saas-unit-economics-center" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> saas-unit-economics-center</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Ingested 1,469 real B2B subscription billing records in data/; rendered interactive f...</small></td>
+                            <td><small>Discovered that mid-market customer accounts had a healthy 118% NRR while enterprise accounts suffered from un...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('saas-unit-economics-center')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 FinOps & Business Analytics</span><br><strong>Data Business Analyst / Operations</strong></td>
+                            <td><strong>Root-Cause Loss Tree</strong><br><span class="text-muted">Tableau Superstore (9,995 line items)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/retail-margin-leakage-detective" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> retail-margin-leakage-detective</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Analyzed 9,995 real Tableau Superstore transactions in data/; built state-by-state pr...</small></td>
+                            <td><small>Discovered that discounting above 20% on technology products generated negative net margin once carrier freigh...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('retail-margin-leakage-detective')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 FinOps & Business Analytics</span><br><strong>Data Business Analyst / CRM Analytics</strong></td>
+                            <td><strong>Pareto/NBD & Gamma-Gamma</strong><br><span class="text-muted">Kaggle Online Retail (5,882 accounts)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/customer-rfm-clv-simulator" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> customer-rfm-clv-simulator</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Ingested 5,882 real customer accounts from Kaggle Online Retail dataset in data/; gen...</small></td>
+                            <td><small>Learned that the top 8% 'Champions' accounted for 54% of future predicted margin; reallocating retention budge...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('customer-rfm-clv-simulator')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🧪 QA & Chaos Testing</span><br><strong>QA Automation / Software Tester</strong></td>
+                            <td><strong>89.4% Autonomous Heal Rate</strong><br><span class="text-muted">Kaggle DOM Mutation Traces (5,000 logs)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/self-healing-test-automation" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> self-healing-test-automation</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Tested against 5,000 synthetic DOM change log traces in data/; captured 1440x900 work...</small></td>
+                            <td><small>Learned that purely text-based Levenshtein distance fails when localization or dynamic i18n is applied; combin...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('self-healing-test-automation')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🧪 QA & Chaos Testing</span><br><strong>Performance Engineer / QA</strong></td>
+                            <td><strong>10K RPS with HdrHistogram P99 Gate</strong><br><span class="text-muted">Production Access Logs (20,000 traces)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/chaos-load-testing-harness" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> chaos-load-testing-harness</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Executed 20,000 real API access log trace requests in data/; generated interactive la...</small></td>
+                            <td><small>Discovered that standard timer-based latency metrics suffer from coordinated omission; switching to high dynam...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('chaos-load-testing-harness')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🧪 QA & Chaos Testing</span><br><strong>API QA / Integration Engineer</strong></td>
+                            <td><strong>Breaking Change AST Diffing</strong><br><span class="text-muted">3-Tier Microservice Pact v4 Matrix</span></td>
+                            <td><a href="https://github.com/Prasunnandi/consumer-contract-testing-grid" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> consumer-contract-testing-grid</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Tested against real 3-tier microservice contract suite (Order, Billing, Inventory) in...</small></td>
+                            <td><small>Learned that schema addition can still be breaking if consumers enforce strict object property rejection; esta...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('consumer-contract-testing-grid')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📊 Product Analytics & PM</span><br><strong>Technical PM / Release Engineer</strong></td>
+                            <td><strong>Automated 2% Error Kill-Switch</strong><br><span class="text-muted">Production Canary Release Logs (25 runs)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/feature-flag-rollout-lab" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> feature-flag-rollout-lab</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Loaded 25 real-world feature rollout case studies in data/; built interactive multiva...</small></td>
+                            <td><small>Discovered that random hashing leads to user cohort churn across app sessions; deterministic hashing on UserID...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('feature-flag-rollout-lab')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📊 Product Analytics & PM</span><br><strong>Product Manager / Product Ops</strong></td>
+                            <td><strong>ARR-Weighted RICE Scoring</strong><br><span class="text-muted">App Store Reviews (10,000 entries)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/voice-of-customer-prioritization" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> voice-of-customer-prioritization</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Imported 10,000 real SaaS app store reviews in data/; created interactive RICE grid w...</small></td>
+                            <td><small>Learned that customer volume does not equal business impact; weighting customer requests by enterprise ARR tie...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('voice-of-customer-prioritization')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📊 Product Analytics & PM</span><br><strong>Product Manager / Strategy</strong></td>
+                            <td><strong>10,000 Monte Carlo Iterations</strong><br><span class="text-muted">Jira Sprint Velocity (2-Year History)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/experimentation-roadmap-simulator" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> experimentation-roadmap-simulator</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Loaded authentic 2-year Jira sprint completion velocity records in data/; rendered in...</small></td>
+                            <td><small>Learned that deterministic Gantt charts fail because task variance compounds exponentially; stochastic modelin...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('experimentation-roadmap-simulator')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚙️ Full-Stack & Distributed</span><br><strong>Distributed Systems Engineer</strong></td>
+                            <td><strong>Majority Quorum Guarantees</strong><br><span class="text-muted">Simulated Split-Brain Partition Tests</span></td>
+                            <td><a href="https://github.com/Prasunnandi/Distributed-Key-Value-Store-with-Raft-Consensus" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> Distributed-Key-Value-Store-with-Raft-Consensus</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Includes comprehensive split-brain partition test harness verifying majority quorum c...</small></td>
+                            <td><small>Gained deep firsthand understanding of split-brain prevention through majority quorums; realized how subtle ti...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('Distributed-Key-Value-Store-with-Raft-Consensus')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚙️ Full-Stack & Distributed</span><br><strong>Quantitative Systems Developer</strong></td>
+                            <td><strong>Sub-Microsecond Price-Time Priority</strong><br><span class="text-muted">Synthetic Market L2 Tick Feeds</span></td>
+                            <td><a href="https://github.com/Prasunnandi/Low-Latency-Limit-Order-Matching-Engine" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> Low-Latency-Limit-Order-Matching-Engine</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Micro-benchmark harness documenting tick-to-trade latency distributions under sustain...</small></td>
+                            <td><small>Discovered that dynamic memory allocations in the hot matching loop introduce CPU cache misses and OS page fau...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('Low-Latency-Limit-Order-Matching-Engine')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 FinOps & Business Analytics</span><br><strong>Fintech / Core Banking Engineer</strong></td>
+                            <td><strong>Zero-Sum Balance Integrity</strong><br><span class="text-muted">Fintech Wallet Ledger Transactions</span></td>
+                            <td><a href="https://github.com/Prasunnandi/digital-wallet-ledger" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> digital-wallet-ledger</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Ingested authentic fintech ledger transactions in data/; built real-time balance shee...</small></td>
+                            <td><small>Encountered race conditions during concurrent P2P transfers; implementing pessimistic row locks on wallet acco...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('digital-wallet-ledger')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🤖 AI & Agentic RAG</span><br><strong>AI Engineer / Full-Stack Java</strong></td>
+                            <td><strong>Dense + Sparse Hybrid RRF Search</strong><br><span class="text-muted">Enterprise Technical Manuals Corpus</span></td>
+                            <td><a href="https://github.com/Prasunnandi/ai-document-assistant-java" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> ai-document-assistant-java</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Ingested technical cloud architecture documentation in data/; captured 1440x900 strea...</small></td>
+                            <td><small>Discovered that dense vector search alone misses exact part numbers and acronyms; hybrid Reciprocal Rank Fusio...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('ai-document-assistant-java')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚙️ Full-Stack & Distributed</span><br><strong>Systems Architect / Workflow Engineer</strong></td>
+                            <td><strong>BPMN 2.0 State Machine</strong><br><span class="text-muted">Multi-Tier Corporate Workflows</span></td>
+                            <td><a href="https://github.com/Prasunnandi/enterprise-workflow-automation" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> enterprise-workflow-automation</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Loaded authentic enterprise procurement workflow schemas in data/; captured interacti...</small></td>
+                            <td><small>Learned that business processes require parallel gateway synchronization; implementing token-based state track...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('enterprise-workflow-automation')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚙️ Full-Stack & Distributed</span><br><strong>Logistics & Enterprise / Full-Stack</strong></td>
+                            <td><strong>Dijkstra VRP Route Solver</strong><br><span class="text-muted">Commercial Long-Haul Telematics</span></td>
+                            <td><a href="https://github.com/Prasunnandi/fleet-logistics-operations-suite" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> fleet-logistics-operations-suite</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Ingested authentic commercial fleet telematics GPS dataset in data/; captured live in...</small></td>
+                            <td><small>Learned that static shortest-path algorithms fail in commercial trucking due to bridge weight and height restr...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('fleet-logistics-operations-suite')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚙️ Full-Stack & Distributed</span><br><strong>Full-Stack / Civic AI Engineer</strong></td>
+                            <td><strong>Multimodal Voice & Image Triage</strong><br><span class="text-muted">Geo-Tagged Grievance Streams</span></td>
+                            <td><a href="https://github.com/Prasunnandi/Nagrik-Setu" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> Nagrik-Setu</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Full-stack TypeScript repository with multilingual audio transcription pipelines, geo...</small></td>
+                            <td><small>Learned that voice transcription in regional Indian languages requires acoustic preprocessing and phoneme matc...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('Nagrik-Setu')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>AI Security / Machine Learning</strong></td>
+                            <td><strong>TF-IDF N-Gram Defense</strong><br><span class="text-muted">Adversarial Jailbreak Corpus</span></td>
+                            <td><a href="https://github.com/Prasunnandi/shieldllm-prompt-security" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> shieldllm-prompt-security</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Python codebase with adversarial prompt evaluation test datasets and detection benchm...</small></td>
+                            <td><small>Discovered that attackers bypass keyword filters using leetspeak and character insertion; implementing normali...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('shieldllm-prompt-security')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>AI Security / Data Privacy</strong></td>
+                            <td><strong>Sub-12ms Reversible Redaction</strong><br><span class="text-muted">Enterprise PII Audit Logs</span></td>
+                            <td><a href="https://github.com/Prasunnandi/privacyguard-llm-dlp" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> privacyguard-llm-dlp</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>FastAPI microservice repository with comprehensive PII evaluation test suites and ben...</small></td>
+                            <td><small>Learned that pure regex misses contextual names, while deep learning models add 200ms latency; a tiered archit...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('privacyguard-llm-dlp')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚙️ Full-Stack & Distributed</span><br><strong>Backend Engineer / Java Specialist</strong></td>
+                            <td><strong>Sub-5ms Cache-Aside Redirect</strong><br><span class="text-muted">Simulated High-Concurrency Traffic</span></td>
+                            <td><a href="https://github.com/Prasunnandi/url-shortener" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> url-shortener</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Full-stack Java/Angular repository with Docker setup, Redis caching layer, and click ...</small></td>
+                            <td><small>Identified that database lookups for every redirect cause unacceptable latency under load; Redis cache-aside a...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('url-shortener')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- ============================================ -->
+========================================= -->
     <!-- Timeline / Journey Section -->
     <!-- ============================================ -->
     <section class="section experience" id="experience">
@@ -674,6 +1629,81 @@
             </div>
         </div>
     </footer>
+
+        <!-- ============================================ -->
+    <!-- Interactive Case Study Modal (Screenshot 2 Framework) -->
+    <!-- ============================================ -->
+    <div class="modal-overlay" id="caseStudyModalOverlay">
+        <div class="case-study-modal" id="caseStudyModal">
+            <div class="modal-header">
+                <div class="modal-title-area">
+                    <span class="modal-badge" id="modalCategoryBadge">Category</span>
+                    <h2 class="modal-title" id="modalTitle">Project Title</h2>
+                    <p class="modal-subtitle" id="modalSubtitle">Role & Focus</p>
+                </div>
+                <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Highlight Proof Badges -->
+                <div class="modal-proof-bar">
+                    <div class="proof-chip"><i class="fas fa-database"></i> <strong>Dataset:</strong> <span id="modalDataset">Dataset</span></div>
+                    <div class="proof-chip"><i class="fas fa-bolt"></i> <strong>Key Metric:</strong> <span id="modalMetric">Metric</span></div>
+                    <div class="proof-chip"><i class="fas fa-check-circle"></i> <strong>Status:</strong> <span id="modalStatus">Live</span></div>
+                </div>
+
+                <!-- Structured 4-Part Evidence Grid -->
+                <div class="case-study-grid">
+                    <div class="case-box context-box">
+                        <div class="case-box-header"><i class="fas fa-bullseye"></i> 1. Problem & Context</div>
+                        <p id="modalProblem">Problem statement</p>
+                    </div>
+
+                    <div class="case-box method-box">
+                        <div class="case-box-header"><i class="fas fa-cogs"></i> 2. Methods & Decisions</div>
+                        <p id="modalMethods">Methods and architectural decisions</p>
+                    </div>
+
+                    <div class="case-box evidence-box">
+                        <div class="case-box-header"><i class="fas fa-file-code"></i> 3. Proof Artefact & Data</div>
+                        <p id="modalEvidence">Proof evidence details</p>
+                    </div>
+
+                    <div class="case-box learning-box">
+                        <div class="case-box-header"><i class="fas fa-lightbulb"></i> 4. Active Learning & Reflection</div>
+                        <p id="modalLearning">Learned from doing the project</p>
+                    </div>
+                </div>
+
+                <!-- Micro Case Study Resume Bullet Box -->
+                <div class="resume-bullet-container">
+                    <div class="bullet-header">
+                        <span><i class="fas fa-clipboard-check"></i> Evidence-Led Micro Case Study (Resume-Ready)</span>
+                        <button class="copy-bullet-btn" id="copyBulletBtn"><i class="fas fa-copy"></i> Copy Bullet</button>
+                    </div>
+                    <div class="bullet-text" id="modalBullet">Bullet text here</div>
+                </div>
+
+                <!-- Tech Tags in Modal -->
+                <div class="modal-tech-stack">
+                    <h4>Core Technologies:</h4>
+                    <div class="modal-tags" id="modalTechTags"></div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" target="_blank" class="btn btn-primary" id="modalGithubBtn">
+                    <i class="fab fa-github"></i> Open GitHub Repository
+                </a>
+                <button class="btn btn-outline" id="modalFooterCloseBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="fas fa-check-circle"></i> <span id="toastMessage">Copied to clipboard!</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
