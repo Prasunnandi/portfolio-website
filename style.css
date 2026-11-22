@@ -847,10 +847,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .filter-btn {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
-    padding: 6px 10px;
+    gap: 4px;
+    padding: 6px 9px;
     border-radius: 100px;
-    font-size: 0.76rem;
+    font-size: 0.75rem;
     font-weight: 500;
     color: var(--text-secondary);
     border: 1px solid var(--border-subtle);
@@ -951,28 +951,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     letter-spacing: 0.4px;
     text-transform: uppercase;
     margin-bottom: 14px;
-}
-
-.project-status.wip {
-    background: rgba(253, 203, 110, 0.15);
-    border: 1px solid rgba(253, 203, 110, 0.35);
-    color: var(--wip-color);
-}
-
-[data-theme="light"] .project-status.wip {
-    background: rgba(217, 119, 6, 0.12);
-    border-color: rgba(217, 119, 6, 0.28);
-}
-
-.project-status.completed {
-    background: rgba(0, 184, 148, 0.12);
-    border: 1px solid rgba(0, 184, 148, 0.3);
-    color: var(--completed-color);
-}
-
-[data-theme="light"] .project-status.completed {
-    background: rgba(5, 150, 105, 0.12);
-    border-color: rgba(5, 150, 105, 0.28);
+    transition: var(--transition-fast);
 }
 
 .status-dot {
@@ -981,9 +960,65 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     border-radius: 50%;
 }
 
-.project-status.wip .status-dot { background: var(--wip-color); }
-.project-status.completed .status-dot { background: var(--completed-color); }
-.status-dot.pulse { animation: pulse 2s infinite; }
+.status-dot.pulse {
+    animation: statusPulse 2s infinite;
+}
+
+@keyframes statusPulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 5px rgba(16, 185, 129, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* 1. Live & Production (Emerald Green) */
+.project-status.live {
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #10b981;
+}
+.project-status.live .status-dot { background: #10b981; }
+
+/* 2. In Development (Warm Amber / Orange) */
+.project-status.wip,
+.project-status.dev {
+    background: rgba(245, 158, 11, 0.14);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    color: #f59e0b;
+}
+.project-status.wip .status-dot,
+.project-status.dev .status-dot { background: #f59e0b; }
+
+/* 3. Production Ready (Teal / Cyan) */
+.project-status.ready {
+    background: rgba(6, 182, 212, 0.12);
+    border: 1px solid rgba(6, 182, 212, 0.32);
+    color: #06b6d4;
+}
+.project-status.ready .status-dot { background: #06b6d4; }
+
+/* 4. Benchmark Tested (Royal Blue) */
+.project-status.benchmark {
+    background: rgba(59, 130, 246, 0.12);
+    border: 1px solid rgba(59, 130, 246, 0.32);
+    color: #60a5fa;
+}
+.project-status.benchmark .status-dot { background: #60a5fa; }
+
+/* 5. Open Source Engine (Purple / Indigo) */
+.project-status.opensource {
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.32);
+    color: #a78bfa;
+}
+.project-status.opensource .status-dot { background: #a78bfa; }
+
+/* 6. Core Research (Rose / Pink) */
+.project-status.research {
+    background: rgba(244, 63, 94, 0.12);
+    border: 1px solid rgba(244, 63, 94, 0.32);
+    color: #fb7185;
+}
+.project-status.research .status-dot { background: #fb7185; }
 
 .project-icon {
     font-size: 1.8rem;
@@ -2015,11 +2050,31 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     border-color: rgba(16, 185, 129, 0.25);
     color: #059669;
 }
-
-[data-theme="light"] .project-status.wip {
-    background: rgba(245, 158, 11, 0.08);
-    border-color: rgba(245, 158, 11, 0.25);
+[data-theme="light"] .project-status.wip,
+[data-theme="light"] .project-status.dev {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.28);
     color: #d97706;
+}
+[data-theme="light"] .project-status.ready {
+    background: rgba(6, 182, 212, 0.08);
+    border-color: rgba(6, 182, 212, 0.25);
+    color: #0891b2;
+}
+[data-theme="light"] .project-status.benchmark {
+    background: rgba(59, 130, 246, 0.08);
+    border-color: rgba(59, 130, 246, 0.25);
+    color: #2563eb;
+}
+[data-theme="light"] .project-status.opensource {
+    background: rgba(139, 92, 246, 0.08);
+    border-color: rgba(139, 92, 246, 0.25);
+    color: #7c3aed;
+}
+[data-theme="light"] .project-status.research {
+    background: rgba(244, 63, 94, 0.08);
+    border-color: rgba(244, 63, 94, 0.25);
+    color: #e11d48;
 }
 
 [data-theme="light"] .btn-case-study {

@@ -332,11 +332,11 @@
                 <p class="section-desc">Production-grade distributed systems, real-time streaming lakehouses, statistical experimentation engines, and cybersecurity firewalls — verified with real benchmark datasets and evidence-led micro case studies.</p>
             </div>
 
-                        <!-- Project Controls Bar (Search + Results Counter + View Mode) -->
+                                    <!-- Project Controls Bar (Search + Results Counter + View Mode) -->
             <div class="project-controls-bar animate-on-scroll">
                 <div class="project-search-box">
                     <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="projectSearch" class="project-search-input" placeholder="Search 47+ projects by tech, domain, or role..." autocomplete="off" spellcheck="false" />
+                    <input type="text" id="projectSearch" class="project-search-input" placeholder="Search 54+ projects by tech, domain, or role..." autocomplete="off" spellcheck="false" />
                     <button class="search-clear-btn" id="searchClearBtn" title="Clear search" aria-label="Clear search">
                         <i class="fas fa-times"></i>
                     </button>
@@ -345,7 +345,7 @@
                 <div class="controls-meta-group">
                     <div class="project-counter-pill" id="projectCounterPill">
                         <span class="status-pulse-dot"></span>
-                        <span id="searchCount">Showing All 47 Projects</span>
+                        <span id="searchCount">Showing All 54 Projects</span>
                     </div>
                     <div class="view-mode-toggle">
                         <button class="view-btn active" id="viewCardsBtn" title="Grid Card View">
@@ -358,20 +358,20 @@
                 </div>
             </div>
 
-            <!-- Filter Tabs (Comprehensive 11 Categories + All) -->
+            <!-- Filter Tabs (11 Tracks: Quant, Data Business Analytics, Core Eng, etc.) -->
             <div class="project-filters animate-on-scroll" id="projectFiltersContainer">
-                <button class="filter-btn active" data-filter="all"><span class="filter-emoji">🌟</span> All Projects <span class="filter-count">47</span></button>
+                <button class="filter-btn active" data-filter="all"><span class="filter-emoji">🌟</span> All Projects <span class="filter-count">54</span></button>
                 <button class="filter-btn" data-filter="data-engineering"><span class="filter-emoji">⚡</span> Data Engineering <span class="filter-count">3</span></button>
-                <button class="filter-btn" data-filter="cybersecurity"><span class="filter-emoji">🛡️</span> Cybersecurity & AppSec <span class="filter-count">5</span></button>
+                <button class="filter-btn" data-filter="cybersecurity"><span class="filter-emoji">🛡️</span> Cybersecurity & AppSec <span class="filter-count">7</span></button>
+                <button class="filter-btn" data-filter="quant"><span class="filter-emoji">⚡</span> Quant & Low-Latency <span class="filter-count">4</span></button>
+                <button class="filter-btn" data-filter="data-business-analytics"><span class="filter-emoji">📈</span> Data Business Analytics <span class="filter-count">5</span></button>
                 <button class="filter-btn" data-filter="product-management"><span class="filter-emoji">🎯</span> Product Management <span class="filter-count">3</span></button>
                 <button class="filter-btn" data-filter="product-analytics"><span class="filter-emoji">📊</span> Product Analytics <span class="filter-count">3</span></button>
-                <button class="filter-btn" data-filter="finops"><span class="filter-emoji">📈</span> FinOps & Analytics <span class="filter-count">4</span></button>
                 <button class="filter-btn" data-filter="software-qa"><span class="filter-emoji">🧪</span> QA & Chaos Testing <span class="filter-count">3</span></button>
                 <button class="filter-btn" data-filter="logistics"><span class="filter-emoji">🚛</span> Logistics & Enterprise <span class="filter-count">6</span></button>
-                <button class="filter-btn" data-filter="ai-ml"><span class="filter-emoji">🤖</span> AI & Machine Learning <span class="filter-count">6</span></button>
-                <button class="filter-btn" data-filter="systems"><span class="filter-emoji">⚙️</span> Distributed Systems <span class="filter-count">4</span></button>
+                <button class="filter-btn" data-filter="ai-ml"><span class="filter-emoji">🤖</span> AI & Machine Learning <span class="filter-count">8</span></button>
                 <button class="filter-btn" data-filter="cloud-devops"><span class="filter-emoji">☁️</span> Cloud & SRE <span class="filter-count">5</span></button>
-                <button class="filter-btn" data-filter="fullstack"><span class="filter-emoji">🌐</span> Full-Stack & Tools <span class="filter-count">5</span></button>
+                <button class="filter-btn" data-filter="fullstack"><span class="filter-emoji">🌐</span> Full-Stack & Web <span class="filter-count">7</span></button>
             </div>
 
             <!-- 1. Grid Cards View -->
@@ -411,8 +411,8 @@
                 <!-- Project: Streaming Iceberg Lakehouse -->
                 <div class="project-card animate-on-scroll" data-category="data-engineering" data-id="streaming-iceberg-lakehouse" data-keywords="streaming iceberg lakehouse data engineering lakehouse architect data engineer apache iceberg v2 parquet minio s3 node js snapshot trees docker nyc yellow taxi 999 parquet trips acid time travel snapshot isolation streaming apache iceberg v2 lakehouse with real time parquet partitioning snapshot isolation automated bin packing compaction and time travel query resolution">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> NYC Yellow Taxi (999 Parquet trips)
@@ -443,8 +443,8 @@
                 <!-- Project: Data Quality Contracts & Lineage -->
                 <div class="project-card animate-on-scroll" data-category="data-engineering" data-id="data-quality-contracts-lineage" data-keywords="data quality contracts lineage data engineering data governance reliability engineer opendatacontract v2 2 great expectations openlineage vis js lineage dag node js postgresql kaggle financial transactions 949 rows 15 great expectations rules enterprise data quality governance platform enforcing opendatacontract schemas great expectations validation suites and openlineage column level dependency graphs">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Kaggle Financial Transactions (949 rows)
@@ -472,97 +472,65 @@
                     </div>
                 </div>
 
-                <!-- Project: Cloud Security Posture Graph (CSPM) -->
-                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="cloud-security-posture-graph" data-keywords="cloud security posture graph cspm cybersecurity cloud security cspm architect aws iam gcp iam cytoscape js graph traversal node js terraform remediation multi account aws gcp topology 28 iam escalation paths cloud security posture management cspm engine building graph based identity and resource models to uncover toxic combinations and multi hop iam privilege escalations">
+                <!-- Project: SecureGuard AI -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="secureguard-ai-risk-platform" data-keywords="secureguard ai cybersecurity ai risk transaction scoring python tensorflow smote scikit learn pandas flask kaggle credit card fraud 284 807 transactions 99 4 roc auc risk detection a hands on risk platform combining feedforward neural networks rolling behavioral velocity features and smote class balancing to experiment with automated fraud and risk detection">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status dev">
+                            <span class="status-dot"></span> IN DEVELOPMENT
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Multi-Account AWS & GCP Topology
+                            <i class="fas fa-database"></i> Kaggle Credit Card Fraud (284,807 transactions)
                         </div>
                     </div>
                     <div class="project-header-row">
                         <div class="project-icon">🛡️</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> 28 IAM Escalation Paths</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 99.4% ROC-AUC Risk Detection</div>
                     </div>
-                    <h3 class="project-title">Cloud Security Posture Graph (CSPM)</h3>
-                    <p class="project-subtitle">Cloud Security / CSPM Architect</p>
+                    <h3 class="project-title">SecureGuard AI</h3>
+                    <p class="project-subtitle">AI Risk & Transaction Scoring</p>
                     <p class="project-desc">
-                        Cloud Security Posture Management (CSPM) engine building graph-based identity and resource models to uncover toxic combinations and multi-hop IAM privilege escalations.
+                        A hands-on risk platform combining feedforward neural networks, rolling behavioral velocity features, and SMOTE class balancing to experiment with automated fraud and risk detection.
                     </p>
                     <div class="project-tech">
-                        <span>AWS IAM</span><span>GCP IAM</span><span>Cytoscape.js</span><span>Graph Traversal</span><span>Node.js</span><span>Terraform Remediation</span>
+                        <span>Python</span><span>TensorFlow</span><span>SMOTE</span><span>Scikit-Learn</span><span>Pandas</span><span>Flask</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('cloud-security-posture-graph')">
+                        <button class="btn-case-study" onclick="openCaseStudy('secureguard-ai-risk-platform')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/cloud-security-posture-graph" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/secureguard-ai-risk-platform" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: SIEM MITRE ATT&CK Correlation Engine -->
-                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="siem-mitre-log-correlation" data-keywords="siem mitre att ck correlation engine cybersecurity soc analyst detection engineer sigma rules mitre att ck matrix sliding window node js splunk bots v3 heatmap canvas splunk bots v3 10 000 attack logs sub second correlation window real time security information and event management siem engine matching streaming security telemetry against mitre att ck techniques with sliding correlation windows">
+                <!-- Project: WebShield AI -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="webshield-llm-defense" data-keywords="webshield ai cybersecurity anti bot llm scraper defense python scikit learn isolationforest waf middleware fastapi autonomous crawler scraper telemetry sub 10ms waf anomaly isolation a waf middleware side project combining user agent filtering hidden honeypots and unsupervised isolationforest anomaly detection to flag automated scrapers and bots">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status dev">
+                            <span class="status-dot"></span> IN DEVELOPMENT
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Splunk BOTS v3 (10,000+ attack logs)
+                            <i class="fas fa-database"></i> Autonomous Crawler & Scraper Telemetry
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">🔍</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-Second Correlation Window</div>
+                        <div class="project-icon">🕸️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-10ms WAF Anomaly Isolation</div>
                     </div>
-                    <h3 class="project-title">SIEM MITRE ATT&CK Correlation Engine</h3>
-                    <p class="project-subtitle">SOC Analyst / Detection Engineer</p>
+                    <h3 class="project-title">WebShield AI</h3>
+                    <p class="project-subtitle">Anti-Bot & LLM Scraper Defense</p>
                     <p class="project-desc">
-                        Real-time Security Information and Event Management (SIEM) engine matching streaming security telemetry against MITRE ATT&CK techniques with sliding correlation windows.
+                        A WAF middleware side project combining User-Agent filtering, hidden honeypots, and unsupervised IsolationForest anomaly detection to flag automated scrapers and bots.
                     </p>
                     <div class="project-tech">
-                        <span>Sigma Rules</span><span>MITRE ATT&CK Matrix</span><span>Sliding Window</span><span>Node.js</span><span>Splunk BOTS v3</span><span>Heatmap Canvas</span>
+                        <span>Python</span><span>Scikit-Learn</span><span>IsolationForest</span><span>WAF Middleware</span><span>FastAPI</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('siem-mitre-log-correlation')">
+                        <button class="btn-case-study" onclick="openCaseStudy('webshield-llm-defense')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/siem-mitre-log-correlation" target="_blank" class="project-link" title="View Source on GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project: SBOM Vulnerability Auditor -->
-                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="sbom-vulnerability-auditor" data-keywords="sbom vulnerability auditor cybersecurity appsec software supply chain cyclonedx spdx v2 3 nvd cve api epss scoring transitive dependency dag node js cyclonedx spdx manifests nvd cve epss exploit prediction integration software supply chain security auditor parsing cyclonedx spdx sboms cross referencing nvd cve databases and exploit prediction scoring system epss probabilities">
-                    <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
-                        </div>
-                        <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> CycloneDX & SPDX Manifests (NVD CVE)
-                        </div>
-                    </div>
-                    <div class="project-header-row">
-                        <div class="project-icon">📦</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> EPSS Exploit Prediction Integration</div>
-                    </div>
-                    <h3 class="project-title">SBOM Vulnerability Auditor</h3>
-                    <p class="project-subtitle">AppSec & Software Supply Chain</p>
-                    <p class="project-desc">
-                        Software Supply Chain security auditor parsing CycloneDX/SPDX SBOMs, cross-referencing NVD CVE databases and Exploit Prediction Scoring System (EPSS) probabilities.
-                    </p>
-                    <div class="project-tech">
-                        <span>CycloneDX</span><span>SPDX v2.3</span><span>NVD CVE API</span><span>EPSS Scoring</span><span>Transitive Dependency DAG</span><span>Node.js</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('sbom-vulnerability-auditor')">
-                            <i class="fas fa-microscope"></i> Case Study & Evidence
-                        </button>
-                        <a href="https://github.com/Prasunnandi/sbom-vulnerability-auditor" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/webshield-llm-defense" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -571,8 +539,8 @@
                 <!-- Project: ShieldLLM Prompt Security Gateway -->
                 <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="shieldllm-prompt-security" data-keywords="shieldllm prompt security gateway cybersecurity ai security appsec engineer python fastapi onnx runtime semantic vector search token perplexity docker jailbreakbench owasp top 10 for llms sub 15ms gateway latency high performance prompt injection and jailbreak firewall inspecting inbound llm prompts via heuristic classifiers semantic vector similarity and token perplexity analysis">
                     <div class="project-meta-row">
-                        <div class="project-status wip">
-                            <span class="status-dot "></span> CORE RESEARCH
+                        <div class="project-status dev">
+                            <span class="status-dot"></span> IN DEVELOPMENT
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> JailbreakBench & OWASP Top 10 for LLMs
@@ -603,8 +571,8 @@
                 <!-- Project: PrivacyGuard LLM DLP -->
                 <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="privacyguard-llm-dlp" data-keywords="privacyguard llm dlp cybersecurity ai security data privacy python spacy ner custom regex cryptographic vault fastapi presidio synthetically generated enterprise logs 100 zero leakage pii masking data loss prevention proxy combining regular expressions and spacy ner to identify redact and cryptographically tokenize sensitive pii before prompts reach third party llms">
                     <div class="project-meta-row">
-                        <div class="project-status wip">
-                            <span class="status-dot "></span> CORE RESEARCH
+                        <div class="project-status dev">
+                            <span class="status-dot"></span> IN DEVELOPMENT
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Synthetically Generated Enterprise Logs
@@ -632,200 +600,264 @@
                     </div>
                 </div>
 
-                <!-- Project: Feature Flag Canary Rollout Lab -->
-                <div class="project-card animate-on-scroll" data-category="product-management" data-id="feature-flag-rollout-lab" data-keywords="feature flag canary rollout lab product management product manager technical pm node js murmurhash3 bucketing canary rollouts error budget slos automated kill switch websockets 25 simulated production rollouts sub second automated rollback enterprise feature flagging and progressive canary deployment platform featuring deterministic hash bucketing error budget guardrails and automated circuit breaker rollbacks">
+                <!-- Project: Cloud Security Posture Graph (CSPM) -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="cloud-security-posture-graph" data-keywords="cloud security posture graph cspm cybersecurity cloud security cspm architect aws iam gcp iam cytoscape js graph traversal node js terraform remediation multi account aws gcp topology 28 iam escalation paths cloud security posture management cspm engine building graph based identity and resource models to uncover toxic combinations and multi hop iam privilege escalations">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> 25 Simulated Production Rollouts
+                            <i class="fas fa-database"></i> Multi-Account AWS & GCP Topology
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">🚩</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-Second Automated Rollback</div>
+                        <div class="project-icon">🛡️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 28 IAM Escalation Paths</div>
                     </div>
-                    <h3 class="project-title">Feature Flag Canary Rollout Lab</h3>
-                    <p class="project-subtitle">Product Manager / Technical PM</p>
+                    <h3 class="project-title">Cloud Security Posture Graph (CSPM)</h3>
+                    <p class="project-subtitle">Cloud Security / CSPM Architect</p>
                     <p class="project-desc">
-                        Enterprise feature flagging and progressive canary deployment platform featuring deterministic hash bucketing, error-budget guardrails, and automated circuit-breaker rollbacks.
+                        Cloud Security Posture Management (CSPM) engine building graph-based identity and resource models to uncover toxic combinations and multi-hop IAM privilege escalations.
                     </p>
                     <div class="project-tech">
-                        <span>Node.js</span><span>MurmurHash3 Bucketing</span><span>Canary Rollouts</span><span>Error Budget SLOs</span><span>Automated Kill-Switch</span><span>WebSockets</span>
+                        <span>AWS IAM</span><span>GCP IAM</span><span>Cytoscape.js</span><span>Graph Traversal</span><span>Node.js</span><span>Terraform Remediation</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('feature-flag-rollout-lab')">
+                        <button class="btn-case-study" onclick="openCaseStudy('cloud-security-posture-graph')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/feature-flag-rollout-lab" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/cloud-security-posture-graph" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Voice of Customer Prioritization -->
-                <div class="project-card animate-on-scroll" data-category="product-management" data-id="voice-of-customer-prioritization" data-keywords="voice of customer prioritization product management product manager product ops nlp sentiment analysis kaggle app reviews rice scoring framework linear jira api node js chart js kaggle app reviews 10 000 entries automated rice scoring matrix ai driven product discovery platform ingesting customer reviews extracting unmet user needs via nlp sentiment clustering and computing prioritized rice product roadmaps">
+                <!-- Project: SIEM MITRE ATT&CK Correlation Engine -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="siem-mitre-log-correlation" data-keywords="siem mitre att ck correlation engine cybersecurity soc analyst detection engineer sigma rules mitre att ck matrix sliding window node js splunk bots v3 heatmap canvas splunk bots v3 10 000 attack logs sub second correlation window real time security information and event management siem engine matching streaming security telemetry against mitre att ck techniques with sliding correlation windows">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Kaggle App Reviews (10,000+ entries)
+                            <i class="fas fa-database"></i> Splunk BOTS v3 (10,000+ attack logs)
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">🗣️</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Automated RICE Scoring Matrix</div>
+                        <div class="project-icon">🔍</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-Second Correlation Window</div>
                     </div>
-                    <h3 class="project-title">Voice of Customer Prioritization</h3>
-                    <p class="project-subtitle">Product Manager / Product Ops</p>
+                    <h3 class="project-title">SIEM MITRE ATT&CK Correlation Engine</h3>
+                    <p class="project-subtitle">SOC Analyst / Detection Engineer</p>
                     <p class="project-desc">
-                        AI-driven product discovery platform ingesting customer reviews, extracting unmet user needs via NLP sentiment clustering, and computing prioritized RICE product roadmaps.
+                        Real-time Security Information and Event Management (SIEM) engine matching streaming security telemetry against MITRE ATT&CK techniques with sliding correlation windows.
                     </p>
                     <div class="project-tech">
-                        <span>NLP Sentiment Analysis</span><span>Kaggle App Reviews</span><span>RICE Scoring Framework</span><span>Linear / Jira API</span><span>Node.js</span><span>Chart.js</span>
+                        <span>Sigma Rules</span><span>MITRE ATT&CK Matrix</span><span>Sliding Window</span><span>Node.js</span><span>Splunk BOTS v3</span><span>Heatmap Canvas</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('voice-of-customer-prioritization')">
+                        <button class="btn-case-study" onclick="openCaseStudy('siem-mitre-log-correlation')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/voice-of-customer-prioritization" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/siem-mitre-log-correlation" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Experimentation Roadmap Simulator -->
-                <div class="project-card animate-on-scroll" data-category="product-management" data-id="experimentation-roadmap-simulator" data-keywords="experimentation roadmap simulator product management product manager strategy monte carlo simulation stochastic modeling velocity forecasting sensitivity analysis node js canvas charts 50 historical feature experiments 10 000 monte carlo iterations monte carlo strategic roadmap forecasting engine evaluating engineering capacity allocation feature win probabilities and projected annual arr impact">
+                <!-- Project: SBOM Vulnerability Auditor -->
+                <div class="project-card animate-on-scroll" data-category="cybersecurity" data-id="sbom-vulnerability-auditor" data-keywords="sbom vulnerability auditor cybersecurity appsec software supply chain cyclonedx spdx v2 3 nvd cve api epss scoring transitive dependency dag node js cyclonedx spdx manifests nvd cve epss exploit prediction integration software supply chain security auditor parsing cyclonedx spdx sboms cross referencing nvd cve databases and exploit prediction scoring system epss probabilities">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status opensource">
+                            <span class="status-dot"></span> OPEN SOURCE ENGINE
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> 50 Historical Feature Experiments
+                            <i class="fas fa-database"></i> CycloneDX & SPDX Manifests (NVD CVE)
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">🎲</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> 10,000 Monte Carlo Iterations</div>
+                        <div class="project-icon">📦</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> EPSS Exploit Prediction Integration</div>
                     </div>
-                    <h3 class="project-title">Experimentation Roadmap Simulator</h3>
-                    <p class="project-subtitle">Product Manager / Strategy</p>
+                    <h3 class="project-title">SBOM Vulnerability Auditor</h3>
+                    <p class="project-subtitle">AppSec & Software Supply Chain</p>
                     <p class="project-desc">
-                        Monte Carlo strategic roadmap forecasting engine evaluating engineering capacity allocation, feature win probabilities, and projected annual ARR impact.
+                        Software Supply Chain security auditor parsing CycloneDX/SPDX SBOMs, cross-referencing NVD CVE databases and Exploit Prediction Scoring System (EPSS) probabilities.
                     </p>
                     <div class="project-tech">
-                        <span>Monte Carlo Simulation</span><span>Stochastic Modeling</span><span>Velocity Forecasting</span><span>Sensitivity Analysis</span><span>Node.js</span><span>Canvas Charts</span>
+                        <span>CycloneDX</span><span>SPDX v2.3</span><span>NVD CVE API</span><span>EPSS Scoring</span><span>Transitive Dependency DAG</span><span>Node.js</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('experimentation-roadmap-simulator')">
+                        <button class="btn-case-study" onclick="openCaseStudy('sbom-vulnerability-auditor')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/experimentation-roadmap-simulator" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/sbom-vulnerability-auditor" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: A/B Testing CUPED Platform -->
-                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="ab-testing-cuped-platform" data-keywords="a b testing cuped platform product analytics product analyst experimentation cuped covariance solver welch s t test kaggle cookie cats power analysis node js chart js kaggle cookie cats 90 189 real players 34 variance reduction statistical experimentation platform implementing controlled experiment using pre experiment data cuped welch s t tests and minimum detectable effect mde power analysis">
+                <!-- Project: Low-Latency Limit Order Matching Engine -->
+                <div class="project-card animate-on-scroll" data-category="quant" data-id="Low-Latency-Limit-Order-Matching-Engine" data-keywords="low latency limit order matching engine quant quantitative developer systems c price time priority fifo zero allocation memory lock free queues market data feed synthetic nasdaq level 2 market feed sub microsecond matching high frequency limit order book lob matching engine implementing price time priority fifo matching zero allocation memory pools and lock free order processing">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status research">
+                            <span class="status-dot pulse"></span> CORE RESEARCH
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Kaggle Cookie Cats (90,189 real players)
+                            <i class="fas fa-database"></i> Synthetic NASDAQ Level-2 Market Feed
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">🧪</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> 34% Variance Reduction</div>
+                        <div class="project-icon">⚡</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-Microsecond Matching</div>
                     </div>
-                    <h3 class="project-title">A/B Testing CUPED Platform</h3>
-                    <p class="project-subtitle">Product Analyst / Experimentation</p>
+                    <h3 class="project-title">Low-Latency Limit Order Matching Engine</h3>
+                    <p class="project-subtitle">Quantitative Developer / Systems</p>
                     <p class="project-desc">
-                        Statistical experimentation platform implementing Controlled-experiment Using Pre-Experiment Data (CUPED), Welch's t-tests, and minimum detectable effect (MDE) power analysis.
+                        High-frequency limit order book (LOB) matching engine implementing Price-Time Priority (FIFO) matching, zero-allocation memory pools, and lock-free order processing.
                     </p>
                     <div class="project-tech">
-                        <span>CUPED Covariance Solver</span><span>Welch's t-test</span><span>Kaggle Cookie Cats</span><span>Power Analysis</span><span>Node.js</span><span>Chart.js</span>
+                        <span>C++</span><span>Price-Time Priority (FIFO)</span><span>Zero-Allocation Memory</span><span>Lock-Free Queues</span><span>Market Data Feed</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('ab-testing-cuped-platform')">
+                        <button class="btn-case-study" onclick="openCaseStudy('Low-Latency-Limit-Order-Matching-Engine')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/ab-testing-cuped-platform" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/Low-Latency-Limit-Order-Matching-Engine" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Funnel Conversion & Attribution -->
-                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="funnel-conversion-attribution" data-keywords="funnel conversion attribution product analytics product analyst marketing analyst markov chains shapley attribution sankey diagrams kaggle user journeys node js d3 js kaggle touchpoints 25 000 customer journeys first order markov chain model multi touch marketing attribution and drop off funnel engine utilizing markov chain transition matrices shapley values and interactive sankey user journey diagrams">
+                <!-- Project: Raft Consensus Distributed KV Store -->
+                <div class="project-card animate-on-scroll" data-category="quant" data-id="Distributed-Key-Value-Store-with-Raft-Consensus" data-keywords="raft consensus distributed kv store quant distributed systems consensus go raft consensus protocol rpc networking log compaction snapshotting docker chaos network partition benchmark sub 50ms leader election fault tolerant distributed key value store implementing the complete raft consensus protocol leader election log replication safety invariants and dynamic cluster membership">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status research">
+                            <span class="status-dot pulse"></span> CORE RESEARCH
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Kaggle Touchpoints (25,000 customer journeys)
+                            <i class="fas fa-database"></i> Chaos Network Partition Benchmark
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🧬</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-50ms Leader Election</div>
+                    </div>
+                    <h3 class="project-title">Raft Consensus Distributed KV Store</h3>
+                    <p class="project-subtitle">Distributed Systems / Consensus</p>
+                    <p class="project-desc">
+                        Fault-tolerant distributed key-value store implementing the complete Raft consensus protocol: leader election, log replication, safety invariants, and dynamic cluster membership.
+                    </p>
+                    <div class="project-tech">
+                        <span>Go</span><span>Raft Consensus Protocol</span><span>RPC Networking</span><span>Log Compaction</span><span>Snapshotting</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('Distributed-Key-Value-Store-with-Raft-Consensus')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/Distributed-Key-Value-Store-with-Raft-Consensus" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Digital Wallet Ledger (Double-Entry) -->
+                <div class="project-card animate-on-scroll" data-category="quant" data-id="digital-wallet-ledger" data-keywords="digital wallet ledger double entry quant fintech core banking node js postgresql serializable transactions double entry accounting sha 256 hash chain docker 10 000 concurrent multi currency transfers cryptographic audit hash chain high throughput digital wallet ledger enforcing immutable double entry bookkeeping multi currency balance isolation and cryptographic audit hash chains">
+                    <div class="project-meta-row">
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> 10,000 Concurrent Multi-Currency Transfers
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">💳</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Cryptographic Audit Hash Chain</div>
+                    </div>
+                    <h3 class="project-title">Digital Wallet Ledger (Double-Entry)</h3>
+                    <p class="project-subtitle">Fintech / Core Banking</p>
+                    <p class="project-desc">
+                        High-throughput digital wallet ledger enforcing immutable double-entry bookkeeping, multi-currency balance isolation, and cryptographic audit hash chains.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>PostgreSQL Serializable Transactions</span><span>Double-Entry Accounting</span><span>SHA-256 Hash Chain</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('digital-wallet-ledger')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/digital-wallet-ledger" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Multithreaded Download Manager -->
+                <div class="project-card animate-on-scroll" data-category="quant" data-id="multithreaded-download-manager" data-keywords="multithreaded download manager quant systems engineer networking go node js http range requests sha 256 checksum stream pipelines docker network throughput benchmark kaggle concurrent http range chunking high performance network file transfer engine executing concurrent http byte range requests dynamic chunk sizing sha 256 checksum verification and resumable downloads">
+                    <div class="project-meta-row">
+                        <div class="project-status opensource">
+                            <span class="status-dot"></span> OPEN SOURCE ENGINE
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Network Throughput Benchmark (Kaggle)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">⚡</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Concurrent HTTP Range Chunking</div>
+                    </div>
+                    <h3 class="project-title">Multithreaded Download Manager</h3>
+                    <p class="project-subtitle">Systems Engineer / Networking</p>
+                    <p class="project-desc">
+                        High-performance network file transfer engine executing concurrent HTTP byte-range requests, dynamic chunk sizing, SHA-256 checksum verification, and resumable downloads.
+                    </p>
+                    <div class="project-tech">
+                        <span>Go / Node.js</span><span>HTTP Range Requests</span><span>SHA-256 Checksum</span><span>Stream Pipelines</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('multithreaded-download-manager')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/multithreaded-download-manager" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Customer Segmentation (Data Mining) -->
+                <div class="project-card animate-on-scroll" data-category="data-business-analytics" data-id="customer-segmentation-data-mining-" data-keywords="customer segmentation data mining data business analytics data business analyst data mining python pandas scikit learn k means pca matplotlib kaggle wholesale customer dataset k means silhouette score 0 68 a machine learning project using k means clustering to discover customer groups from purchase patterns evaluated using silhouette scores and visual clusters for data driven insights">
+                    <div class="project-meta-row">
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Wholesale Customer Dataset
                         </div>
                     </div>
                     <div class="project-header-row">
                         <div class="project-icon">📊</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> First-Order Markov Chain Model</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> K-Means Silhouette Score 0.68</div>
                     </div>
-                    <h3 class="project-title">Funnel Conversion & Attribution</h3>
-                    <p class="project-subtitle">Product Analyst / Marketing Analyst</p>
+                    <h3 class="project-title">Customer Segmentation (Data Mining)</h3>
+                    <p class="project-subtitle">Data Business Analyst / Data Mining</p>
                     <p class="project-desc">
-                        Multi-touch marketing attribution and drop-off funnel engine utilizing Markov Chain transition matrices, Shapley values, and interactive Sankey user journey diagrams.
+                        A machine learning project using K-Means clustering to discover customer groups from purchase patterns. Evaluated using silhouette scores and visual clusters for data-driven insights.
                     </p>
                     <div class="project-tech">
-                        <span>Markov Chains</span><span>Shapley Attribution</span><span>Sankey Diagrams</span><span>Kaggle User Journeys</span><span>Node.js</span><span>D3.js</span>
+                        <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>K-Means</span><span>PCA</span><span>Matplotlib</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('funnel-conversion-attribution')">
+                        <button class="btn-case-study" onclick="openCaseStudy('customer-segmentation-data-mining-')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/funnel-conversion-attribution" target="_blank" class="project-link" title="View Source on GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project: Retention & Aha-Moment Clustering -->
-                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="retention-aha-clustering" data-keywords="retention aha moment clustering product analytics product analyst growth analyst k means clustering cohort heatmaps feature importance kaggle telco dataset node js chart js kaggle telco customer dataset 7 043 users 3 2x higher 90 day ltv user activation analytics platform performing k means behavioral clustering and cohort retention analysis to isolate the exact early product actions that drive long term habituation">
-                    <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
-                        </div>
-                        <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Kaggle Telco Customer Dataset (7,043 users)
-                        </div>
-                    </div>
-                    <div class="project-header-row">
-                        <div class="project-icon">💡</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> 3.2x Higher 90-Day LTV</div>
-                    </div>
-                    <h3 class="project-title">Retention & Aha-Moment Clustering</h3>
-                    <p class="project-subtitle">Product Analyst / Growth Analyst</p>
-                    <p class="project-desc">
-                        User activation analytics platform performing K-Means behavioral clustering and cohort retention analysis to isolate the exact early product actions that drive long-term habituation.
-                    </p>
-                    <div class="project-tech">
-                        <span>K-Means Clustering</span><span>Cohort Heatmaps</span><span>Feature Importance</span><span>Kaggle Telco Dataset</span><span>Node.js</span><span>Chart.js</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('retention-aha-clustering')">
-                            <i class="fas fa-microscope"></i> Case Study & Evidence
-                        </button>
-                        <a href="https://github.com/Prasunnandi/retention-aha-clustering" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/customer-segmentation-data-mining-" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
                 <!-- Project: SaaS Unit Economics & Boardroom -->
-                <div class="project-card animate-on-scroll" data-category="finops" data-id="saas-unit-economics-center" data-keywords="saas unit economics boardroom finops data business analyst finance arr waterfall cohort churn matrix cac payback solver rule of 40 node js chart js kaggle saas billing 1 469 subscriptions rule of 40 cac payback gauges executive financial analytics command center decomposing annual recurring revenue arr cohort churn cac payback periods and magic number efficiency benchmarks">
+                <div class="project-card animate-on-scroll" data-category="data-business-analytics" data-id="saas-unit-economics-center" data-keywords="saas unit economics boardroom data business analytics data business analyst finance arr waterfall cohort churn matrix cac payback solver rule of 40 node js chart js kaggle saas billing 1 469 subscriptions rule of 40 cac payback gauges executive financial analytics command center decomposing annual recurring revenue arr cohort churn cac payback periods and magic number efficiency benchmarks">
                     <div class="project-meta-row">
                         <div class="project-status live">
                             <span class="status-dot pulse"></span> LIVE & PRODUCTION
@@ -857,10 +889,10 @@
                 </div>
 
                 <!-- Project: Retail Margin Leakage Detective -->
-                <div class="project-card animate-on-scroll" data-category="finops" data-id="retail-margin-leakage-detective" data-keywords="retail margin leakage detective finops data business analyst operations waterfall margin tree anomaly outlier z score kaggle superstore geographic profit choropleth node js kaggle superstore 9 995 sales rows root cause loss decomposition operational analytics system detecting hidden profit erosion across product lines freight surcharges unapproved supplier discounts and regional return anomalies">
+                <div class="project-card animate-on-scroll" data-category="data-business-analytics" data-id="retail-margin-leakage-detective" data-keywords="retail margin leakage detective data business analytics data business analyst operations waterfall margin tree anomaly outlier z score kaggle superstore geographic profit choropleth node js kaggle superstore 9 995 sales rows root cause loss decomposition operational analytics system detecting hidden profit erosion across product lines freight surcharges unapproved supplier discounts and regional return anomalies">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Kaggle Superstore (9,995 sales rows)
@@ -889,10 +921,10 @@
                 </div>
 
                 <!-- Project: Customer RFM & Probabilistic CLV -->
-                <div class="project-card animate-on-scroll" data-category="finops" data-id="customer-rfm-clv-simulator" data-keywords="customer rfm probabilistic clv finops data business analyst crm analytics rfm quintile matrix pareto nbd btyd model gamma gamma monetary model kaggle online retail node js kaggle online retail 5 882 customer accounts pareto nbd probabilistic model customer lifetime value modeling platform implementing rfm segmentation buy till you die btyd probabilistic churn prediction and dynamic campaign budget allocation">
+                <div class="project-card animate-on-scroll" data-category="data-business-analytics" data-id="customer-rfm-clv-simulator" data-keywords="customer rfm probabilistic clv data business analytics data business analyst crm analytics rfm quintile matrix pareto nbd btyd model gamma gamma monetary model kaggle online retail node js kaggle online retail 5 882 customer accounts pareto nbd probabilistic model customer lifetime value modeling platform implementing rfm segmentation buy till you die btyd probabilistic churn prediction and dynamic campaign budget allocation">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Kaggle Online Retail (5,882 customer accounts)
@@ -921,10 +953,10 @@
                 </div>
 
                 <!-- Project: Business Decision Simulator -->
-                <div class="project-card animate-on-scroll" data-category="finops" data-id="business-decision-simulator" data-keywords="business decision simulator finops fintech financial modeling node js monte carlo simulation npv irr solver tornado sensitivity chart cash flow forecast series a startup financials kaggle benchmark 10 000 monte carlo iterations stochastic financial planning simulator executing 10 000 monte carlo iterations over cash flow curves runway projections and sensitivity tornado charts">
+                <div class="project-card animate-on-scroll" data-category="data-business-analytics" data-id="business-decision-simulator" data-keywords="business decision simulator data business analytics fintech financial modeling node js monte carlo simulation npv irr solver tornado sensitivity chart cash flow forecast series a startup financials kaggle benchmark 10 000 monte carlo iterations stochastic financial planning simulator executing 10 000 monte carlo iterations over cash flow curves runway projections and sensitivity tornado charts">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status research">
+                            <span class="status-dot pulse"></span> CORE RESEARCH
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Series A Startup Financials (Kaggle Benchmark)
@@ -952,11 +984,203 @@
                     </div>
                 </div>
 
+                <!-- Project: Feature Flag Canary Rollout Lab -->
+                <div class="project-card animate-on-scroll" data-category="product-management" data-id="feature-flag-rollout-lab" data-keywords="feature flag canary rollout lab product management product manager technical pm node js murmurhash3 bucketing canary rollouts error budget slos automated kill switch websockets 25 simulated production rollouts sub second automated rollback enterprise feature flagging and progressive canary deployment platform featuring deterministic hash bucketing error budget guardrails and automated circuit breaker rollbacks">
+                    <div class="project-meta-row">
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> 25 Simulated Production Rollouts
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🚩</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-Second Automated Rollback</div>
+                    </div>
+                    <h3 class="project-title">Feature Flag Canary Rollout Lab</h3>
+                    <p class="project-subtitle">Product Manager / Technical PM</p>
+                    <p class="project-desc">
+                        Enterprise feature flagging and progressive canary deployment platform featuring deterministic hash bucketing, error-budget guardrails, and automated circuit-breaker rollbacks.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>MurmurHash3 Bucketing</span><span>Canary Rollouts</span><span>Error Budget SLOs</span><span>Automated Kill-Switch</span><span>WebSockets</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('feature-flag-rollout-lab')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/feature-flag-rollout-lab" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Voice of Customer Prioritization -->
+                <div class="project-card animate-on-scroll" data-category="product-management" data-id="voice-of-customer-prioritization" data-keywords="voice of customer prioritization product management product manager product ops nlp sentiment analysis kaggle app reviews rice scoring framework linear jira api node js chart js kaggle app reviews 10 000 entries automated rice scoring matrix ai driven product discovery platform ingesting customer reviews extracting unmet user needs via nlp sentiment clustering and computing prioritized rice product roadmaps">
+                    <div class="project-meta-row">
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle App Reviews (10,000+ entries)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🗣️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Automated RICE Scoring Matrix</div>
+                    </div>
+                    <h3 class="project-title">Voice of Customer Prioritization</h3>
+                    <p class="project-subtitle">Product Manager / Product Ops</p>
+                    <p class="project-desc">
+                        AI-driven product discovery platform ingesting customer reviews, extracting unmet user needs via NLP sentiment clustering, and computing prioritized RICE product roadmaps.
+                    </p>
+                    <div class="project-tech">
+                        <span>NLP Sentiment Analysis</span><span>Kaggle App Reviews</span><span>RICE Scoring Framework</span><span>Linear / Jira API</span><span>Node.js</span><span>Chart.js</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('voice-of-customer-prioritization')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/voice-of-customer-prioritization" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Experimentation Roadmap Simulator -->
+                <div class="project-card animate-on-scroll" data-category="product-management" data-id="experimentation-roadmap-simulator" data-keywords="experimentation roadmap simulator product management product manager strategy monte carlo simulation stochastic modeling velocity forecasting sensitivity analysis node js canvas charts 50 historical feature experiments 10 000 monte carlo iterations monte carlo strategic roadmap forecasting engine evaluating engineering capacity allocation feature win probabilities and projected annual arr impact">
+                    <div class="project-meta-row">
+                        <div class="project-status research">
+                            <span class="status-dot pulse"></span> CORE RESEARCH
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> 50 Historical Feature Experiments
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🎲</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 10,000 Monte Carlo Iterations</div>
+                    </div>
+                    <h3 class="project-title">Experimentation Roadmap Simulator</h3>
+                    <p class="project-subtitle">Product Manager / Strategy</p>
+                    <p class="project-desc">
+                        Monte Carlo strategic roadmap forecasting engine evaluating engineering capacity allocation, feature win probabilities, and projected annual ARR impact.
+                    </p>
+                    <div class="project-tech">
+                        <span>Monte Carlo Simulation</span><span>Stochastic Modeling</span><span>Velocity Forecasting</span><span>Sensitivity Analysis</span><span>Node.js</span><span>Canvas Charts</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('experimentation-roadmap-simulator')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/experimentation-roadmap-simulator" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: A/B Testing CUPED Platform -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="ab-testing-cuped-platform" data-keywords="a b testing cuped platform product analytics product analyst experimentation cuped covariance solver welch s t test kaggle cookie cats power analysis node js chart js kaggle cookie cats 90 189 real players 34 variance reduction statistical experimentation platform implementing controlled experiment using pre experiment data cuped welch s t tests and minimum detectable effect mde power analysis">
+                    <div class="project-meta-row">
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Cookie Cats (90,189 real players)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🧪</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 34% Variance Reduction</div>
+                    </div>
+                    <h3 class="project-title">A/B Testing CUPED Platform</h3>
+                    <p class="project-subtitle">Product Analyst / Experimentation</p>
+                    <p class="project-desc">
+                        Statistical experimentation platform implementing Controlled-experiment Using Pre-Experiment Data (CUPED), Welch's t-tests, and minimum detectable effect (MDE) power analysis.
+                    </p>
+                    <div class="project-tech">
+                        <span>CUPED Covariance Solver</span><span>Welch's t-test</span><span>Kaggle Cookie Cats</span><span>Power Analysis</span><span>Node.js</span><span>Chart.js</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('ab-testing-cuped-platform')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/ab-testing-cuped-platform" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Funnel Conversion & Attribution -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="funnel-conversion-attribution" data-keywords="funnel conversion attribution product analytics product analyst marketing analyst markov chains shapley attribution sankey diagrams kaggle user journeys node js d3 js kaggle touchpoints 25 000 customer journeys first order markov chain model multi touch marketing attribution and drop off funnel engine utilizing markov chain transition matrices shapley values and interactive sankey user journey diagrams">
+                    <div class="project-meta-row">
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Touchpoints (25,000 customer journeys)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">📊</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> First-Order Markov Chain Model</div>
+                    </div>
+                    <h3 class="project-title">Funnel Conversion & Attribution</h3>
+                    <p class="project-subtitle">Product Analyst / Marketing Analyst</p>
+                    <p class="project-desc">
+                        Multi-touch marketing attribution and drop-off funnel engine utilizing Markov Chain transition matrices, Shapley values, and interactive Sankey user journey diagrams.
+                    </p>
+                    <div class="project-tech">
+                        <span>Markov Chains</span><span>Shapley Attribution</span><span>Sankey Diagrams</span><span>Kaggle User Journeys</span><span>Node.js</span><span>D3.js</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('funnel-conversion-attribution')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/funnel-conversion-attribution" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Retention & Aha-Moment Clustering -->
+                <div class="project-card animate-on-scroll" data-category="product-analytics" data-id="retention-aha-clustering" data-keywords="retention aha moment clustering product analytics product analyst growth analyst k means clustering cohort heatmaps feature importance kaggle telco dataset node js chart js kaggle telco customer dataset 7 043 users 3 2x higher 90 day ltv user activation analytics platform performing k means behavioral clustering and cohort retention analysis to isolate the exact early product actions that drive long term habituation">
+                    <div class="project-meta-row">
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Telco Customer Dataset (7,043 users)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">💡</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> 3.2x Higher 90-Day LTV</div>
+                    </div>
+                    <h3 class="project-title">Retention & Aha-Moment Clustering</h3>
+                    <p class="project-subtitle">Product Analyst / Growth Analyst</p>
+                    <p class="project-desc">
+                        User activation analytics platform performing K-Means behavioral clustering and cohort retention analysis to isolate the exact early product actions that drive long-term habituation.
+                    </p>
+                    <div class="project-tech">
+                        <span>K-Means Clustering</span><span>Cohort Heatmaps</span><span>Feature Importance</span><span>Kaggle Telco Dataset</span><span>Node.js</span><span>Chart.js</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('retention-aha-clustering')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/retention-aha-clustering" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Project: Self-Healing E2E Test Automation -->
                 <div class="project-card animate-on-scroll" data-category="software-qa" data-id="self-healing-test-automation" data-keywords="self healing e2e test automation software qa software tester qa automation playwright ast tree matching levenshtein distance kaggle dom traces node js html report kaggle web app dom mutation traces 92 test flakiness reduction resilient automated testing harness leveraging abstract syntax tree ast tree matching and multi attribute heuristics to dynamically heal broken element locators at runtime">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status opensource">
+                            <span class="status-dot"></span> OPEN SOURCE ENGINE
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Kaggle Web App DOM Mutation Traces
@@ -987,8 +1211,8 @@
                 <!-- Project: Chaos Load & Performance Harness -->
                 <div class="project-card animate-on-scroll" data-category="software-qa" data-id="chaos-load-testing-harness" data-keywords="chaos load performance harness software qa software tester performance engineer node js cluster toxiproxy fault injection hdrhistogram websocket liveops docker 10 000 rps distributed traffic logs p99 9 latency sla verification distributed performance testing framework combining high throughput load generation with dynamic chaos fault injection latency injection packet drop connection throttling">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> 10,000 RPS Distributed Traffic Logs
@@ -1019,8 +1243,8 @@
                 <!-- Project: Consumer-Driven Contract Testing -->
                 <div class="project-card animate-on-scroll" data-category="software-qa" data-id="consumer-contract-testing-grid" data-keywords="consumer driven contract testing software qa software tester api qa pact contract protocol openapi v3 1 validator git pre push hook schema registry node js 12 microservices schema repository 100 zero downtime api contracts bi directional consumer driven contract testing platform preventing breaking api mutations between decoupled frontend applications and backend microservices in ci cd">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> 12 Microservices Schema Repository
@@ -1043,6 +1267,38 @@
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
                         <a href="https://github.com/Prasunnandi/consumer-contract-testing-grid" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Enterprise Workflow Automation -->
+                <div class="project-card animate-on-scroll" data-category="logistics" data-id="enterprise-workflow-automation" data-keywords="enterprise workflow automation logistics systems architect workflow engineer java node js bpmn 2 0 engine react flow cryptographic audit sla timers docker multi tier corporate workflows bpmn 2 0 state machine enterprise bpmn 2 0 workflow orchestration engine with a react flow visual canvas multi level conditional approvals automated sla escalation timers and cryptographic audit logging">
+                    <div class="project-meta-row">
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Multi-Tier Corporate Workflows
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🔄</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> BPMN 2.0 State Machine</div>
+                    </div>
+                    <h3 class="project-title">Enterprise Workflow Automation</h3>
+                    <p class="project-subtitle">Systems Architect / Workflow Engineer</p>
+                    <p class="project-desc">
+                        Enterprise BPMN 2.0 workflow orchestration engine with a React Flow visual canvas, multi-level conditional approvals, automated SLA escalation timers, and cryptographic audit logging.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java / Node.js</span><span>BPMN 2.0 Engine</span><span>React Flow</span><span>Cryptographic Audit</span><span>SLA Timers</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('enterprise-workflow-automation')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/enterprise-workflow-automation" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -1083,8 +1339,8 @@
                 <!-- Project: Retail Warehouse Intelligence -->
                 <div class="project-card animate-on-scroll" data-category="logistics" data-id="retail-warehouse-intelligence-system" data-keywords="retail warehouse intelligence logistics logistics enterprise wms architect java node js 3d bin packing heuristics fifo lifo strategy three js spatial heatmap docker kaggle retail inventory stock benchmark 88 volumetric pallet density warehouse spatial intelligence platform implementing 3d bin packing heuristics for pallet space optimization shortest path tsp pick path routing and interactive heatmaps">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Kaggle Retail Inventory Stock Benchmark
@@ -1115,8 +1371,8 @@
                 <!-- Project: WarehouseIQ High-Throughput WMS -->
                 <div class="project-card animate-on-scroll" data-category="logistics" data-id="warehouseiq-wms" data-keywords="warehouseiq high throughput wms logistics logistics enterprise iot systems node js rfid event processor cross docking engine three js 3d view docker 10 000 rfid movement events kaggle 35 faster dock to stock transit enterprise wms processing high throughput rfid antenna event streams entering dock doors matching incoming shipments directly to outbound orders via cross docking algorithms">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> 10,000 RFID Movement Events (Kaggle)
@@ -1147,8 +1403,8 @@
                 <!-- Project: RouteWise Last-Mile Logistics -->
                 <div class="project-card animate-on-scroll" data-category="logistics" data-id="routewise-logistics-intelligence" data-keywords="routewise last mile logistics logistics logistics enterprise operations research node js genetic algorithm leaflet maps geofencing carbon tracking express 2 000 last mile dispatch events kaggle 94 on time delivery compliance last mile logistics intelligence platform implementing genetic algorithms for traveling salesman problem tsp optimization with hard delivery time windows and dynamic traffic etas">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status research">
+                            <span class="status-dot pulse"></span> CORE RESEARCH
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> 2,000 Last-Mile Dispatch Events (Kaggle)
@@ -1176,43 +1432,11 @@
                     </div>
                 </div>
 
-                <!-- Project: Enterprise Workflow Automation -->
-                <div class="project-card animate-on-scroll" data-category="logistics" data-id="enterprise-workflow-automation" data-keywords="enterprise workflow automation logistics systems architect workflow engineer java node js bpmn 2 0 engine react flow cryptographic audit sla timers docker multi tier corporate workflows bpmn 2 0 state machine enterprise bpmn 2 0 workflow orchestration engine with a react flow visual canvas multi level conditional approvals automated sla escalation timers and cryptographic audit logging">
-                    <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
-                        </div>
-                        <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Multi-Tier Corporate Workflows
-                        </div>
-                    </div>
-                    <div class="project-header-row">
-                        <div class="project-icon">🔄</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> BPMN 2.0 State Machine</div>
-                    </div>
-                    <h3 class="project-title">Enterprise Workflow Automation</h3>
-                    <p class="project-subtitle">Systems Architect / Workflow Engineer</p>
-                    <p class="project-desc">
-                        Enterprise BPMN 2.0 workflow orchestration engine with a React Flow visual canvas, multi-level conditional approvals, automated SLA escalation timers, and cryptographic audit logging.
-                    </p>
-                    <div class="project-tech">
-                        <span>Java / Node.js</span><span>BPMN 2.0 Engine</span><span>React Flow</span><span>Cryptographic Audit</span><span>SLA Timers</span><span>Docker</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('enterprise-workflow-automation')">
-                            <i class="fas fa-microscope"></i> Case Study & Evidence
-                        </button>
-                        <a href="https://github.com/Prasunnandi/enterprise-workflow-automation" target="_blank" class="project-link" title="View Source on GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
                 <!-- Project: ProcureFlow Autonomous Procurement -->
                 <div class="project-card animate-on-scroll" data-category="logistics" data-id="procureflow-procurement" data-keywords="procureflow autonomous procurement logistics logistics enterprise finops node js 3 way reconciler vendor scorecard matrix landed cost engine docker kaggle corporate rfq invoices benchmark 3 way match maverick detection autonomous procurement and invoice matching platform featuring automated 3 way reconciliation po receiving slip invoice vendor risk scoring and maverick spend detection">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status dev">
+                            <span class="status-dot"></span> IN DEVELOPMENT
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Kaggle Corporate RFQ & Invoices Benchmark
@@ -1240,11 +1464,75 @@
                     </div>
                 </div>
 
+                <!-- Project: Agentic RAG Orchestrator -->
+                <div class="project-card animate-on-scroll" data-category="ai-ml" data-id="agentic-rag-multimodal-orchestrator" data-keywords="agentic rag orchestrator ai ml multimedia video doc research tool python langchain whisper chromadb streamlit openai multi hour video lectures pdf corpus timestamp accurate video rag an ai app that transcribes youtube videos with whisper builds vector databases with chromadb and performs multi modal grounded question answering with langchain and streamlit">
+                    <div class="project-meta-row">
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Multi-Hour Video Lectures & PDF Corpus
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🎙️</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Timestamp-Accurate Video RAG</div>
+                    </div>
+                    <h3 class="project-title">Agentic RAG Orchestrator</h3>
+                    <p class="project-subtitle">Multimedia Video & Doc Research Tool</p>
+                    <p class="project-desc">
+                        An AI app that transcribes YouTube videos with Whisper, builds vector databases with ChromaDB, and performs multi-modal grounded question-answering with LangChain and Streamlit.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>LangChain</span><span>Whisper</span><span>ChromaDB</span><span>Streamlit</span><span>OpenAI</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('agentic-rag-multimodal-orchestrator')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/agentic-rag-multimedia-orchestrator-" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: AI Code Intelligence -->
+                <div class="project-card animate-on-scroll" data-category="ai-ml" data-id="ai-code-intelligence" data-keywords="ai code intelligence ai ml automated code review assistant node js mistralai github api javascript ast parser github pull request diffs 500 prs ast semantic ast diff pr review a web tool that analyzes pull requests using llms built with a node js backend connecting to github apis for real time diff extraction and context aware feedback on code changes">
+                    <div class="project-meta-row">
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> GitHub Pull Request Diffs (500+ PRs)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🤖</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> AST Semantic AST Diff & PR Review</div>
+                    </div>
+                    <h3 class="project-title">AI Code Intelligence</h3>
+                    <p class="project-subtitle">Automated Code Review Assistant</p>
+                    <p class="project-desc">
+                        A web tool that analyzes pull requests using LLMs. Built with a Node.js backend connecting to GitHub APIs for real-time diff extraction and context-aware feedback on code changes.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>MistralAI</span><span>GitHub API</span><span>JavaScript</span><span>AST Parser</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('ai-code-intelligence')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/ai-code-intelligence" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Project: Customer Churn & Retention AI -->
                 <div class="project-card animate-on-scroll" data-category="ai-ml" data-id="customer-churn-retention-ai" data-keywords="customer churn retention ai ai ml ai engineer machine learning node js calibrated logistic regression shap attribution kaplan meier survival docker kaggle churn support interaction logs shap feature attribution matrix end to end churn intelligence platform computing individual customer churn probabilities decomposing risk factors into shap feature attributions and triggering automated retention playbooks">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Kaggle Churn & Support Interaction Logs
@@ -1275,8 +1563,8 @@
                 <!-- Project: Predictive Maintenance IoT AI -->
                 <div class="project-card animate-on-scroll" data-category="ai-ml" data-id="predictive-maintenance-ai" data-keywords="predictive maintenance iot ai ai ml ai engineer iot analytics node js nasa c mapss telemetry rul regression fft spectral analysis docker nasa c mapss turbofan sensor data remaining useful life rul solver industrial iot predictive maintenance platform processing nasa c mapss turbofan degradation telemetry computing remaining useful life rul and analyzing vibration fft spectral frequencies">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status benchmark">
+                            <span class="status-dot"></span> BENCHMARK TESTED
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> NASA C-MAPSS Turbofan Sensor Data
@@ -1307,8 +1595,8 @@
                 <!-- Project: DocuSense Document Understanding -->
                 <div class="project-card animate-on-scroll" data-category="ai-ml" data-id="docusense-document-understanding" data-keywords="docusense document understanding ai ml ai engineer document ai node js ocr bounding box parsing spatial table reconstruction ner clause extractor docker commercial lease nda corpus kaggle spatial table clause extraction multimodal document ai platform combining ocr bounding box parsing spatial table reconstruction and legal clause extraction to parse complex commercial contracts into structured json">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status dev">
+                            <span class="status-dot"></span> IN DEVELOPMENT
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Commercial Lease & NDA Corpus (Kaggle)
@@ -1339,8 +1627,8 @@
                 <!-- Project: Document Intelligence Recruitment -->
                 <div class="project-card animate-on-scroll" data-category="ai-ml" data-id="document-intelligence-recruitment" data-keywords="document intelligence recruitment ai ml ai engineer nlp architect node js vector embeddings esco o net ontology cosine similarity candidate match scorecard technical resume corpus kaggle benchmark esco o net skill ontology match ai talent intelligence platform extracting technical skills mapped against standardized o net esco ontologies computing cosine vector similarity and generating tailored interview scorecards">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Technical Resume Corpus (Kaggle Benchmark)
@@ -1403,8 +1691,8 @@
                 <!-- Project: Nagrik Setu Civic Platform -->
                 <div class="project-card animate-on-scroll" data-category="ai-ml" data-id="Nagrik-Setu" data-keywords="nagrik setu civic platform ai ml full stack civic ai engineer typescript next js prisma ai audio processing postgresql tailwind css geo tagged grievance streams multimodal voice image triage citizen grievance and municipal response portal utilizing multimodal ai to analyze voice reports classify civic issues via computer vision and route tickets to municipal departments">
                     <div class="project-meta-row">
-                        <div class="project-status wip">
-                            <span class="status-dot "></span> CORE RESEARCH
+                        <div class="project-status research">
+                            <span class="status-dot pulse"></span> CORE RESEARCH
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Geo-Tagged Grievance Streams
@@ -1432,129 +1720,225 @@
                     </div>
                 </div>
 
-                <!-- Project: Digital Wallet Ledger (Double-Entry) -->
-                <div class="project-card animate-on-scroll" data-category="systems" data-id="digital-wallet-ledger" data-keywords="digital wallet ledger double entry systems fintech core banking node js postgresql serializable transactions double entry accounting sha 256 hash chain docker 10 000 concurrent multi currency transfers cryptographic audit hash chain high throughput digital wallet ledger enforcing immutable double entry bookkeeping multi currency balance isolation and cryptographic audit hash chains">
+                <!-- Project: Mini Search Engine -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="mini-search-engine" data-keywords="mini search engine fullstack custom search crawler system node js react mongodb bm25 ranking cheerio express 10 000 web pages inverted index sub 15ms bm25 ranking engine a full stack search engine built completely from scratch includes an async web crawler natural language stemmer custom mongodb inverted index and bm25 ranking algorithm">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status opensource">
+                            <span class="status-dot"></span> OPEN SOURCE ENGINE
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> 10,000 Concurrent Multi-Currency Transfers
+                            <i class="fas fa-database"></i> 10,000 Web Pages Inverted Index
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">💳</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Cryptographic Audit Hash Chain</div>
+                        <div class="project-icon">🔍</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-15ms BM25 Ranking Engine</div>
                     </div>
-                    <h3 class="project-title">Digital Wallet Ledger (Double-Entry)</h3>
-                    <p class="project-subtitle">Fintech / Core Banking</p>
+                    <h3 class="project-title">Mini Search Engine</h3>
+                    <p class="project-subtitle">Custom Search & Crawler System</p>
                     <p class="project-desc">
-                        High-throughput digital wallet ledger enforcing immutable double-entry bookkeeping, multi-currency balance isolation, and cryptographic audit hash chains.
+                        A full-stack search engine built completely from scratch — includes an async web crawler, natural language stemmer, custom MongoDB inverted index, and BM25 ranking algorithm.
                     </p>
                     <div class="project-tech">
-                        <span>Node.js</span><span>PostgreSQL Serializable Transactions</span><span>Double-Entry Accounting</span><span>SHA-256 Hash Chain</span><span>Docker</span>
+                        <span>Node.js</span><span>React</span><span>MongoDB</span><span>BM25 Ranking</span><span>Cheerio</span><span>Express</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('digital-wallet-ledger')">
+                        <button class="btn-case-study" onclick="openCaseStudy('mini-search-engine')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/digital-wallet-ledger" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/mini-search-engine" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Multithreaded Download Manager -->
-                <div class="project-card animate-on-scroll" data-category="systems" data-id="multithreaded-download-manager" data-keywords="multithreaded download manager systems systems engineer networking go node js http range requests sha 256 checksum stream pipelines docker network throughput benchmark kaggle concurrent http range chunking high performance network file transfer engine executing concurrent http byte range requests dynamic chunk sizing sha 256 checksum verification and resumable downloads">
+                <!-- Project: Mini API Gateway -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="mini-api-gateway" data-keywords="mini api gateway fullstack microservice gateway dashboard node js express react mongodb jwt token bucket distributed microservices cluster benchmark sliding window token bucket limiter a lightweight api gateway implementing route forwarding jwt authentication middleware ip rate limiting and a react dashboard to monitor service status and request flow">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Network Throughput Benchmark (Kaggle)
+                            <i class="fas fa-database"></i> Distributed Microservices Cluster Benchmark
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">⚡</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Concurrent HTTP Range Chunking</div>
+                        <div class="project-icon">🚪</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sliding Window Token Bucket Limiter</div>
                     </div>
-                    <h3 class="project-title">Multithreaded Download Manager</h3>
-                    <p class="project-subtitle">Systems Engineer / Networking</p>
+                    <h3 class="project-title">Mini API Gateway</h3>
+                    <p class="project-subtitle">Microservice Gateway & Dashboard</p>
                     <p class="project-desc">
-                        High-performance network file transfer engine executing concurrent HTTP byte-range requests, dynamic chunk sizing, SHA-256 checksum verification, and resumable downloads.
+                        A lightweight API gateway implementing route forwarding, JWT authentication middleware, IP rate limiting, and a React dashboard to monitor service status and request flow.
                     </p>
                     <div class="project-tech">
-                        <span>Go / Node.js</span><span>HTTP Range Requests</span><span>SHA-256 Checksum</span><span>Stream Pipelines</span><span>Docker</span>
+                        <span>Node.js</span><span>Express</span><span>React</span><span>MongoDB</span><span>JWT</span><span>Token Bucket</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('multithreaded-download-manager')">
+                        <button class="btn-case-study" onclick="openCaseStudy('mini-api-gateway')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/multithreaded-download-manager" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/mini-api-gateway" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Raft Consensus Distributed KV Store -->
-                <div class="project-card animate-on-scroll" data-category="systems" data-id="Distributed-Key-Value-Store-with-Raft-Consensus" data-keywords="raft consensus distributed kv store systems distributed systems consensus go raft consensus protocol rpc networking log compaction snapshotting docker chaos network partition benchmark sub 50ms leader election fault tolerant distributed key value store implementing the complete raft consensus protocol leader election log replication safety invariants and dynamic cluster membership">
+                <!-- Project: URL Shortener (Distributed Cache-Aside) -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="url-shortener" data-keywords="url shortener distributed cache aside fullstack backend engineer java specialist java 17 spring boot 3 angular 20 redis cache postgresql base62 simulated high concurrency traffic sub 5ms cache aside redirect production grade distributed url shortener built in spring boot 3 and angular 20 utilizing base62 cryptographic encoding and redis cache aside architecture for sub 5ms redirects">
                     <div class="project-meta-row">
-                        <div class="project-status wip">
-                            <span class="status-dot "></span> CORE RESEARCH
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Chaos Network Partition Benchmark
+                            <i class="fas fa-database"></i> Simulated High-Concurrency Traffic
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">🧬</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-50ms Leader Election</div>
+                        <div class="project-icon">🔗</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-5ms Cache-Aside Redirect</div>
                     </div>
-                    <h3 class="project-title">Raft Consensus Distributed KV Store</h3>
-                    <p class="project-subtitle">Distributed Systems / Consensus</p>
+                    <h3 class="project-title">URL Shortener (Distributed Cache-Aside)</h3>
+                    <p class="project-subtitle">Backend Engineer / Java Specialist</p>
                     <p class="project-desc">
-                        Fault-tolerant distributed key-value store implementing the complete Raft consensus protocol: leader election, log replication, safety invariants, and dynamic cluster membership.
+                        Production-grade distributed URL shortener built in Spring Boot 3 and Angular 20 utilizing Base62 cryptographic encoding and Redis cache-aside architecture for sub-5ms redirects.
                     </p>
                     <div class="project-tech">
-                        <span>Go</span><span>Raft Consensus Protocol</span><span>RPC Networking</span><span>Log Compaction</span><span>Snapshotting</span><span>Docker</span>
+                        <span>Java 17</span><span>Spring Boot 3</span><span>Angular 20</span><span>Redis Cache</span><span>PostgreSQL</span><span>Base62</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('Distributed-Key-Value-Store-with-Raft-Consensus')">
+                        <button class="btn-case-study" onclick="openCaseStudy('url-shortener')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/Distributed-Key-Value-Store-with-Raft-Consensus" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/url-shortener" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
 
-                <!-- Project: Low-Latency Limit Order Matching Engine -->
-                <div class="project-card animate-on-scroll" data-category="systems" data-id="Low-Latency-Limit-Order-Matching-Engine" data-keywords="low latency limit order matching engine systems quantitative developer systems c price time priority fifo zero allocation memory lock free queues market data feed synthetic nasdaq level 2 market feed sub microsecond matching high frequency limit order book lob matching engine implementing price time priority fifo matching zero allocation memory pools and lock free order processing">
+                <!-- Project: Smart Business Multi-Vendor Marketplace -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="smart-business-marketplace" data-keywords="smart business multi vendor marketplace fullstack full stack engineer e commerce node js express react escrow state machine stripe connect docker 2 000 item catalog freight benchmark multi party escrow payment state machine multi vendor b2b e commerce platform featuring multi party escrow payments automated split payout orders optimistic inventory locking and verified dispute resolution">
                     <div class="project-meta-row">
-                        <div class="project-status wip">
-                            <span class="status-dot "></span> CORE RESEARCH
+                        <div class="project-status dev">
+                            <span class="status-dot"></span> IN DEVELOPMENT
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Synthetic NASDAQ Level-2 Market Feed
+                            <i class="fas fa-database"></i> 2,000-Item Catalog & Freight Benchmark
                         </div>
                     </div>
                     <div class="project-header-row">
-                        <div class="project-icon">⚡</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-Microsecond Matching</div>
+                        <div class="project-icon">🛒</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Multi-Party Escrow Payment State Machine</div>
                     </div>
-                    <h3 class="project-title">Low-Latency Limit Order Matching Engine</h3>
-                    <p class="project-subtitle">Quantitative Developer / Systems</p>
+                    <h3 class="project-title">Smart Business Multi-Vendor Marketplace</h3>
+                    <p class="project-subtitle">Full-Stack Engineer / E-Commerce</p>
                     <p class="project-desc">
-                        High-frequency limit order book (LOB) matching engine implementing Price-Time Priority (FIFO) matching, zero-allocation memory pools, and lock-free order processing.
+                        Multi-vendor B2B e-commerce platform featuring multi-party escrow payments, automated split-payout orders, optimistic inventory locking, and verified dispute resolution.
                     </p>
                     <div class="project-tech">
-                        <span>C++</span><span>Price-Time Priority (FIFO)</span><span>Zero-Allocation Memory</span><span>Lock-Free Queues</span><span>Market Data Feed</span>
+                        <span>Node.js</span><span>Express</span><span>React</span><span>Escrow State Machine</span><span>Stripe Connect</span><span>Docker</span>
                     </div>
                     <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('Low-Latency-Limit-Order-Matching-Engine')">
+                        <button class="btn-case-study" onclick="openCaseStudy('smart-business-marketplace')">
                             <i class="fas fa-microscope"></i> Case Study & Evidence
                         </button>
-                        <a href="https://github.com/Prasunnandi/Low-Latency-Limit-Order-Matching-Engine" target="_blank" class="project-link" title="View Source on GitHub">
+                        <a href="https://github.com/Prasunnandi/smart-business-marketplace" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Creator Business Manager & Asset Vault -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="creator-business-manager" data-keywords="creator business manager asset vault fullstack full stack engineer creator tech node js stripe webhooks time expiring signed urls react tailwind css docker kaggle creator deals sponsorships time expiring signed url delivery digital creator management platform generating time limited expiring signed download urls verified stripe webhook fulfillment affiliate referral tracking and 1099 k tax reports">
+                    <div class="project-meta-row">
+                        <div class="project-status dev">
+                            <span class="status-dot"></span> IN DEVELOPMENT
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Kaggle Creator Deals & Sponsorships
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🎨</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Time-Expiring Signed URL Delivery</div>
+                    </div>
+                    <h3 class="project-title">Creator Business Manager & Asset Vault</h3>
+                    <p class="project-subtitle">Full-Stack Engineer / Creator Tech</p>
+                    <p class="project-desc">
+                        Digital creator management platform generating time-limited expiring signed download URLs, verified Stripe webhook fulfillment, affiliate referral tracking, and 1099-K tax reports.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>Stripe Webhooks</span><span>Time-Expiring Signed URLs</span><span>React</span><span>Tailwind CSS</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('creator-business-manager')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/creator-business-manager" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: FormCraft Drag-and-Drop Form Builder -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="formcraft-drag-drop-builder" data-keywords="formcraft drag and drop form builder fullstack frontend developer tooling react dnd kit json schema ast conditional logic engine tailwind css enterprise survey response benchmark dynamic json schema ast engine interactive drag and drop form creation studio compiling visual form components into declarative json schema asts supporting conditional visibility rules and response analytics">
+                    <div class="project-meta-row">
+                        <div class="project-status opensource">
+                            <span class="status-dot"></span> OPEN SOURCE ENGINE
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Enterprise Survey Response Benchmark
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">📝</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Dynamic JSON Schema AST Engine</div>
+                    </div>
+                    <h3 class="project-title">FormCraft Drag-and-Drop Form Builder</h3>
+                    <p class="project-subtitle">Frontend / Developer Tooling</p>
+                    <p class="project-desc">
+                        Interactive drag-and-drop form creation studio compiling visual form components into declarative JSON Schema ASTs, supporting conditional visibility rules and response analytics.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span><span>dnd-kit</span><span>JSON Schema AST</span><span>Conditional Logic Engine</span><span>Tailwind CSS</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('formcraft-drag-drop-builder')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/formcraft-drag-drop-builder" target="_blank" class="project-link" title="View Source on GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: FileBridge Secure Encrypted Sharing -->
+                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="filebridge-secure-sharing" data-keywords="filebridge secure encrypted sharing fullstack full stack security cryptography node js web crypto api aes gcm pbkdf2 chunked uploads react docker encrypted transfer audit logs kaggle client side aes 256 gcm zero knowledge zero knowledge end to end encrypted file sharing platform performing client side aes 256 gcm encryption in web workers resumable chunked streaming and self destructing links">
+                    <div class="project-meta-row">
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
+                        </div>
+                        <div class="dataset-pill" title="Verified Benchmark Dataset">
+                            <i class="fas fa-database"></i> Encrypted Transfer Audit Logs (Kaggle)
+                        </div>
+                    </div>
+                    <div class="project-header-row">
+                        <div class="project-icon">🔐</div>
+                        <div class="metric-chip"><i class="fas fa-bolt"></i> Client-Side AES-256-GCM Zero-Knowledge</div>
+                    </div>
+                    <h3 class="project-title">FileBridge Secure Encrypted Sharing</h3>
+                    <p class="project-subtitle">Full-Stack / Security & Cryptography</p>
+                    <p class="project-desc">
+                        Zero-knowledge end-to-end encrypted file sharing platform performing client-side AES-256-GCM encryption in Web Workers, resumable chunked streaming, and self-destructing links.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span><span>Web Crypto API (AES-GCM)</span><span>PBKDF2</span><span>Chunked Uploads</span><span>React</span><span>Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-case-study" onclick="openCaseStudy('filebridge-secure-sharing')">
+                            <i class="fas fa-microscope"></i> Case Study & Evidence
+                        </button>
+                        <a href="https://github.com/Prasunnandi/filebridge-secure-sharing" target="_blank" class="project-link" title="View Source on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -1627,8 +2011,8 @@
                 <!-- Project: QueueFlow Distributed Job Engine -->
                 <div class="project-card animate-on-scroll" data-category="cloud-devops" data-id="queueflow-job-processor" data-keywords="queueflow distributed job engine cloud devops distributed systems sre node js redis streams priority queues exponential backoff websockets docker 50 000 background jobs kaggle distributed idempotency dlq replay high throughput distributed background job processor with multi tier priority workers critical high default low jittered exponential backoff and an interactive dlq replay console">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> 50,000 Background Jobs (Kaggle)
@@ -1659,8 +2043,8 @@
                 <!-- Project: Multi-Tenant SaaS Core Architecture -->
                 <div class="project-card animate-on-scroll" data-category="cloud-devops" data-id="multitenant-saas-core" data-keywords="multi tenant saas core architecture cloud devops cloud architect saas backend node js postgresql rls dynamic schema routing rbac security jwt auth docker multi tenant audit event logs kaggle postgresql row level security rls multi tenant saas backend framework enforcing cryptographic data isolation via postgresql row level security rls dynamic schema routing rbac and tenant resource quota limits">
                     <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
+                        <div class="project-status ready">
+                            <span class="status-dot"></span> PRODUCTION READY
                         </div>
                         <div class="dataset-pill" title="Verified Benchmark Dataset">
                             <i class="fas fa-database"></i> Multi-Tenant Audit Event Logs (Kaggle)
@@ -1719,166 +2103,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Project: Smart Business Multi-Vendor Marketplace -->
-                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="smart-business-marketplace" data-keywords="smart business multi vendor marketplace fullstack full stack engineer e commerce node js express react escrow state machine stripe connect docker 2 000 item catalog freight benchmark multi party escrow payment state machine multi vendor b2b e commerce platform featuring multi party escrow payments automated split payout orders optimistic inventory locking and verified dispute resolution">
-                    <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
-                        </div>
-                        <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> 2,000-Item Catalog & Freight Benchmark
-                        </div>
-                    </div>
-                    <div class="project-header-row">
-                        <div class="project-icon">🛒</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Multi-Party Escrow Payment State Machine</div>
-                    </div>
-                    <h3 class="project-title">Smart Business Multi-Vendor Marketplace</h3>
-                    <p class="project-subtitle">Full-Stack Engineer / E-Commerce</p>
-                    <p class="project-desc">
-                        Multi-vendor B2B e-commerce platform featuring multi-party escrow payments, automated split-payout orders, optimistic inventory locking, and verified dispute resolution.
-                    </p>
-                    <div class="project-tech">
-                        <span>Node.js</span><span>Express</span><span>React</span><span>Escrow State Machine</span><span>Stripe Connect</span><span>Docker</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('smart-business-marketplace')">
-                            <i class="fas fa-microscope"></i> Case Study & Evidence
-                        </button>
-                        <a href="https://github.com/Prasunnandi/smart-business-marketplace" target="_blank" class="project-link" title="View Source on GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project: Creator Business Manager & Asset Vault -->
-                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="creator-business-manager" data-keywords="creator business manager asset vault fullstack full stack engineer creator tech node js stripe webhooks time expiring signed urls react tailwind css docker kaggle creator deals sponsorships time expiring signed url delivery digital creator management platform generating time limited expiring signed download urls verified stripe webhook fulfillment affiliate referral tracking and 1099 k tax reports">
-                    <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
-                        </div>
-                        <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Kaggle Creator Deals & Sponsorships
-                        </div>
-                    </div>
-                    <div class="project-header-row">
-                        <div class="project-icon">🎨</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Time-Expiring Signed URL Delivery</div>
-                    </div>
-                    <h3 class="project-title">Creator Business Manager & Asset Vault</h3>
-                    <p class="project-subtitle">Full-Stack Engineer / Creator Tech</p>
-                    <p class="project-desc">
-                        Digital creator management platform generating time-limited expiring signed download URLs, verified Stripe webhook fulfillment, affiliate referral tracking, and 1099-K tax reports.
-                    </p>
-                    <div class="project-tech">
-                        <span>Node.js</span><span>Stripe Webhooks</span><span>Time-Expiring Signed URLs</span><span>React</span><span>Tailwind CSS</span><span>Docker</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('creator-business-manager')">
-                            <i class="fas fa-microscope"></i> Case Study & Evidence
-                        </button>
-                        <a href="https://github.com/Prasunnandi/creator-business-manager" target="_blank" class="project-link" title="View Source on GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project: FormCraft Drag-and-Drop Form Builder -->
-                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="formcraft-drag-drop-builder" data-keywords="formcraft drag and drop form builder fullstack frontend developer tooling react dnd kit json schema ast conditional logic engine tailwind css enterprise survey response benchmark dynamic json schema ast engine interactive drag and drop form creation studio compiling visual form components into declarative json schema asts supporting conditional visibility rules and response analytics">
-                    <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
-                        </div>
-                        <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Enterprise Survey Response Benchmark
-                        </div>
-                    </div>
-                    <div class="project-header-row">
-                        <div class="project-icon">📝</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Dynamic JSON Schema AST Engine</div>
-                    </div>
-                    <h3 class="project-title">FormCraft Drag-and-Drop Form Builder</h3>
-                    <p class="project-subtitle">Frontend / Developer Tooling</p>
-                    <p class="project-desc">
-                        Interactive drag-and-drop form creation studio compiling visual form components into declarative JSON Schema ASTs, supporting conditional visibility rules and response analytics.
-                    </p>
-                    <div class="project-tech">
-                        <span>React</span><span>dnd-kit</span><span>JSON Schema AST</span><span>Conditional Logic Engine</span><span>Tailwind CSS</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('formcraft-drag-drop-builder')">
-                            <i class="fas fa-microscope"></i> Case Study & Evidence
-                        </button>
-                        <a href="https://github.com/Prasunnandi/formcraft-drag-drop-builder" target="_blank" class="project-link" title="View Source on GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project: FileBridge Secure Encrypted Sharing -->
-                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="filebridge-secure-sharing" data-keywords="filebridge secure encrypted sharing fullstack full stack security cryptography node js web crypto api aes gcm pbkdf2 chunked uploads react docker encrypted transfer audit logs kaggle client side aes 256 gcm zero knowledge zero knowledge end to end encrypted file sharing platform performing client side aes 256 gcm encryption in web workers resumable chunked streaming and self destructing links">
-                    <div class="project-meta-row">
-                        <div class="project-status live">
-                            <span class="status-dot pulse"></span> LIVE & PRODUCTION
-                        </div>
-                        <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Encrypted Transfer Audit Logs (Kaggle)
-                        </div>
-                    </div>
-                    <div class="project-header-row">
-                        <div class="project-icon">🔐</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Client-Side AES-256-GCM Zero-Knowledge</div>
-                    </div>
-                    <h3 class="project-title">FileBridge Secure Encrypted Sharing</h3>
-                    <p class="project-subtitle">Full-Stack / Security & Cryptography</p>
-                    <p class="project-desc">
-                        Zero-knowledge end-to-end encrypted file sharing platform performing client-side AES-256-GCM encryption in Web Workers, resumable chunked streaming, and self-destructing links.
-                    </p>
-                    <div class="project-tech">
-                        <span>Node.js</span><span>Web Crypto API (AES-GCM)</span><span>PBKDF2</span><span>Chunked Uploads</span><span>React</span><span>Docker</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('filebridge-secure-sharing')">
-                            <i class="fas fa-microscope"></i> Case Study & Evidence
-                        </button>
-                        <a href="https://github.com/Prasunnandi/filebridge-secure-sharing" target="_blank" class="project-link" title="View Source on GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project: URL Shortener (Distributed Cache-Aside) -->
-                <div class="project-card animate-on-scroll" data-category="fullstack" data-id="url-shortener" data-keywords="url shortener distributed cache aside fullstack backend engineer java specialist java 17 spring boot 3 angular 20 redis cache postgresql base62 simulated high concurrency traffic sub 5ms cache aside redirect production grade distributed url shortener built in spring boot 3 and angular 20 utilizing base62 cryptographic encoding and redis cache aside architecture for sub 5ms redirects">
-                    <div class="project-meta-row">
-                        <div class="project-status wip">
-                            <span class="status-dot "></span> CORE RESEARCH
-                        </div>
-                        <div class="dataset-pill" title="Verified Benchmark Dataset">
-                            <i class="fas fa-database"></i> Simulated High-Concurrency Traffic
-                        </div>
-                    </div>
-                    <div class="project-header-row">
-                        <div class="project-icon">🔗</div>
-                        <div class="metric-chip"><i class="fas fa-bolt"></i> Sub-5ms Cache-Aside Redirect</div>
-                    </div>
-                    <h3 class="project-title">URL Shortener (Distributed Cache-Aside)</h3>
-                    <p class="project-subtitle">Backend Engineer / Java Specialist</p>
-                    <p class="project-desc">
-                        Production-grade distributed URL shortener built in Spring Boot 3 and Angular 20 utilizing Base62 cryptographic encoding and Redis cache-aside architecture for sub-5ms redirects.
-                    </p>
-                    <div class="project-tech">
-                        <span>Java 17</span><span>Spring Boot 3</span><span>Angular 20</span><span>Redis Cache</span><span>PostgreSQL</span><span>Base62</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="btn-case-study" onclick="openCaseStudy('url-shortener')">
-                            <i class="fas fa-microscope"></i> Case Study & Evidence
-                        </button>
-                        <a href="https://github.com/Prasunnandi/url-shortener" target="_blank" class="project-link" title="View Source on GitHub">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
             </div>
 
             <!-- 2. Evidence Matrix Table View (Initially Hidden) -->
@@ -1928,6 +2152,38 @@
                             <td><button class="btn-matrix-view" onclick="openCaseStudy('data-quality-contracts-lineage')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>AI Risk & Transaction Scoring</strong></td>
+                            <td><strong>99.4% ROC-AUC Risk Detection</strong><br><span class="text-muted">Kaggle Credit Card Fraud (284,807 transactions)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/secureguard-ai-risk-platform" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> secureguard-ai-risk-platform</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Evaluated over 284,807 Kaggle credit card transactions in data/; achieved 99.4% ROC-AUC wi...</small></td>
+                            <td><small>Discovered that velocity features (e.g. 3 transactions within 90 seconds from different geolocation coord...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('secureguard-ai-risk-platform')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>Anti-Bot & LLM Scraper Defense</strong></td>
+                            <td><strong>Sub-10ms WAF Anomaly Isolation</strong><br><span class="text-muted">Autonomous Crawler & Scraper Telemetry</span></td>
+                            <td><a href="https://github.com/Prasunnandi/webshield-llm-defense" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> webshield-llm-defense</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Tested against headless puppeteer/selenium scraper suites; successfully trapped and blocke...</small></td>
+                            <td><small>Learned that modern headless browsers spoof user agents and canvas hashes; detecting missing mouse cursor...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('webshield-llm-defense')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>AI Security / AppSec Engineer</strong></td>
+                            <td><strong>Sub-15ms Gateway Latency</strong><br><span class="text-muted">JailbreakBench & OWASP Top 10 for LLMs</span></td>
+                            <td><a href="https://github.com/Prasunnandi/shieldllm-prompt-security" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> shieldllm-prompt-security</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Tested against 1,000+ adversarial prompts from JailbreakBench and OWASP Top 10 for LLMs; a...</small></td>
+                            <td><small>Found that adversarial attackers bypass string filters with Base64, Morse code, or multi-lingual obfuscat...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('shieldllm-prompt-security')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>AI Security / Data Privacy</strong></td>
+                            <td><strong>100% Zero-Leakage PII Masking</strong><br><span class="text-muted">Synthetically Generated Enterprise Logs</span></td>
+                            <td><a href="https://github.com/Prasunnandi/privacyguard-llm-dlp" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> privacyguard-llm-dlp</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Demonstrated 100% redaction accuracy across synthetic credit card, SSN, and patient record...</small></td>
+                            <td><small>Learned that context-aware NER models frequently miss formatted credentials like AWS secret keys; built c...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('privacyguard-llm-dlp')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
                             <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>Cloud Security / CSPM Architect</strong></td>
                             <td><strong>28 IAM Escalation Paths</strong><br><span class="text-muted">Multi-Account AWS & GCP Topology</span></td>
                             <td><a href="https://github.com/Prasunnandi/cloud-security-posture-graph" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> cloud-security-posture-graph</a></td>
@@ -1952,20 +2208,76 @@
                             <td><button class="btn-matrix-view" onclick="openCaseStudy('sbom-vulnerability-auditor')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
-                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>AI Security / AppSec Engineer</strong></td>
-                            <td><strong>Sub-15ms Gateway Latency</strong><br><span class="text-muted">JailbreakBench & OWASP Top 10 for LLMs</span></td>
-                            <td><a href="https://github.com/Prasunnandi/shieldllm-prompt-security" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> shieldllm-prompt-security</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Tested against 1,000+ adversarial prompts from JailbreakBench and OWASP Top 10 for LLMs; a...</small></td>
-                            <td><small>Found that adversarial attackers bypass string filters with Base64, Morse code, or multi-lingual obfuscat...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('shieldllm-prompt-security')"><i class="fas fa-eye"></i> Details</button></td>
+                            <td><span class="role-badge">⚡ Quant & Low-Latency</span><br><strong>Quantitative Developer / Systems</strong></td>
+                            <td><strong>Sub-Microsecond Matching</strong><br><span class="text-muted">Synthetic NASDAQ Level-2 Market Feed</span></td>
+                            <td><a href="https://github.com/Prasunnandi/Low-Latency-Limit-Order-Matching-Engine" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> Low-Latency-Limit-Order-Matching-Engine</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Stress-tested with 1,000,000 synthetic NASDAQ level-2 orders; achieved sustained throughpu...</small></td>
+                            <td><small>Discovered that CPU L1/L2 cache misses account for 70% of matching latency; restructured order structs to...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('Low-Latency-Limit-Order-Matching-Engine')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
-                            <td><span class="role-badge">🛡️ Cybersecurity & AppSec</span><br><strong>AI Security / Data Privacy</strong></td>
-                            <td><strong>100% Zero-Leakage PII Masking</strong><br><span class="text-muted">Synthetically Generated Enterprise Logs</span></td>
-                            <td><a href="https://github.com/Prasunnandi/privacyguard-llm-dlp" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> privacyguard-llm-dlp</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Demonstrated 100% redaction accuracy across synthetic credit card, SSN, and patient record...</small></td>
-                            <td><small>Learned that context-aware NER models frequently miss formatted credentials like AWS secret keys; built c...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('privacyguard-llm-dlp')"><i class="fas fa-eye"></i> Details</button></td>
+                            <td><span class="role-badge">⚡ Quant & Low-Latency</span><br><strong>Distributed Systems / Consensus</strong></td>
+                            <td><strong>Sub-50ms Leader Election</strong><br><span class="text-muted">Chaos Network Partition Benchmark</span></td>
+                            <td><a href="https://github.com/Prasunnandi/Distributed-Key-Value-Store-with-Raft-Consensus" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> Distributed-Key-Value-Store-with-Raft-Consensus</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Simulated asymmetric network partitions and killed active leaders in a 5-node cluster; ach...</small></td>
+                            <td><small>Realized that uncoordinated election timeouts trigger split votes; randomized election jitter between 150...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('Distributed-Key-Value-Store-with-Raft-Consensus')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚡ Quant & Low-Latency</span><br><strong>Fintech / Core Banking</strong></td>
+                            <td><strong>Cryptographic Audit Hash Chain</strong><br><span class="text-muted">10,000 Concurrent Multi-Currency Transfers</span></td>
+                            <td><a href="https://github.com/Prasunnandi/digital-wallet-ledger" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> digital-wallet-ledger</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Executed 10,000 concurrent multi-currency transfers in data/ with zero balance divergence;...</small></td>
+                            <td><small>Learned that pessimistic row locking causes high deadlocks under high concurrency; implemented determinis...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('digital-wallet-ledger')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">⚡ Quant & Low-Latency</span><br><strong>Systems Engineer / Networking</strong></td>
+                            <td><strong>Concurrent HTTP Range Chunking</strong><br><span class="text-muted">Network Throughput Benchmark (Kaggle)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/multithreaded-download-manager" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> multithreaded-download-manager</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Benchmark logs in data/ verified 3.8x download speedup over single-stream transfers; captu...</small></td>
+                            <td><small>Discovered that reassembling large files by in-memory concatenation exhausts RAM; stream-piped chunk file...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('multithreaded-download-manager')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 Data Business Analytics</span><br><strong>Data Business Analyst / Data Mining</strong></td>
+                            <td><strong>K-Means Silhouette Score 0.68</strong><br><span class="text-muted">Kaggle Wholesale Customer Dataset</span></td>
+                            <td><a href="https://github.com/Prasunnandi/customer-segmentation-data-mining-" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> customer-segmentation-data-mining-</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Evaluated on Kaggle Wholesale Customers benchmark; achieved 0.68 Silhouette score with 2D ...</small></td>
+                            <td><small>Discovered that feature scaling with RobustScaler was essential because extreme wholesale bulk purchases ...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('customer-segmentation-data-mining-')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 Data Business Analytics</span><br><strong>Data Business Analyst / Finance</strong></td>
+                            <td><strong>Rule of 40 & CAC Payback Gauges</strong><br><span class="text-muted">Kaggle SaaS Billing (1,469 subscriptions)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/saas-unit-economics-center" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> saas-unit-economics-center</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Processed 1,469 authentic B2B subscription transactions in data/; captured executive dashb...</small></td>
+                            <td><small>Observed that gross customer churn concealed healthy net negative churn in enterprise tiers; segmenting u...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('saas-unit-economics-center')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 Data Business Analytics</span><br><strong>Data Business Analyst / Operations</strong></td>
+                            <td><strong>Root-Cause Loss Decomposition</strong><br><span class="text-muted">Kaggle Superstore (9,995 sales rows)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/retail-margin-leakage-detective" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> retail-margin-leakage-detective</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Analyzed 9,995 authentic retail transaction records from Kaggle Superstore in data/; gener...</small></td>
+                            <td><small>Discovered that standard promotional discounts combined with expedited shipping resulted in 42 SKUs selli...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('retail-margin-leakage-detective')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 Data Business Analytics</span><br><strong>Data Business Analyst / CRM Analytics</strong></td>
+                            <td><strong>Pareto/NBD Probabilistic Model</strong><br><span class="text-muted">Kaggle Online Retail (5,882 customer accounts)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/customer-rfm-clv-simulator" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> customer-rfm-clv-simulator</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Evaluated 5,882 real customer transaction histories from Kaggle in data/; generated intera...</small></td>
+                            <td><small>Learned that recency of last purchase is a 4x stronger predictor of future transaction volume than histor...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('customer-rfm-clv-simulator')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">📈 Data Business Analytics</span><br><strong>Fintech / Financial Modeling</strong></td>
+                            <td><strong>10,000 Monte Carlo Iterations</strong><br><span class="text-muted">Series A Startup Financials (Kaggle Benchmark)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/business-decision-simulator" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> business-decision-simulator</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Analyzed authentic Series A financial scenarios in data/; captured interactive Tornado cha...</small></td>
+                            <td><small>Discovered that headcount expansion timing has a 2.5x larger variance impact on runway than marketing spe...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('business-decision-simulator')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
                             <td><span class="role-badge">🎯 Product Management</span><br><strong>Product Manager / Technical PM</strong></td>
@@ -2016,38 +2328,6 @@
                             <td><button class="btn-matrix-view" onclick="openCaseStudy('retention-aha-clustering')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
-                            <td><span class="role-badge">📈 FinOps & Business Analytics</span><br><strong>Data Business Analyst / Finance</strong></td>
-                            <td><strong>Rule of 40 & CAC Payback Gauges</strong><br><span class="text-muted">Kaggle SaaS Billing (1,469 subscriptions)</span></td>
-                            <td><a href="https://github.com/Prasunnandi/saas-unit-economics-center" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> saas-unit-economics-center</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Processed 1,469 authentic B2B subscription transactions in data/; captured executive dashb...</small></td>
-                            <td><small>Observed that gross customer churn concealed healthy net negative churn in enterprise tiers; segmenting u...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('saas-unit-economics-center')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge">📈 FinOps & Business Analytics</span><br><strong>Data Business Analyst / Operations</strong></td>
-                            <td><strong>Root-Cause Loss Decomposition</strong><br><span class="text-muted">Kaggle Superstore (9,995 sales rows)</span></td>
-                            <td><a href="https://github.com/Prasunnandi/retail-margin-leakage-detective" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> retail-margin-leakage-detective</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Analyzed 9,995 authentic retail transaction records from Kaggle Superstore in data/; gener...</small></td>
-                            <td><small>Discovered that standard promotional discounts combined with expedited shipping resulted in 42 SKUs selli...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('retail-margin-leakage-detective')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge">📈 FinOps & Business Analytics</span><br><strong>Data Business Analyst / CRM Analytics</strong></td>
-                            <td><strong>Pareto/NBD Probabilistic Model</strong><br><span class="text-muted">Kaggle Online Retail (5,882 customer accounts)</span></td>
-                            <td><a href="https://github.com/Prasunnandi/customer-rfm-clv-simulator" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> customer-rfm-clv-simulator</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Evaluated 5,882 real customer transaction histories from Kaggle in data/; generated intera...</small></td>
-                            <td><small>Learned that recency of last purchase is a 4x stronger predictor of future transaction volume than histor...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('customer-rfm-clv-simulator')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge">📈 FinOps & Business Analytics</span><br><strong>Fintech / Financial Modeling</strong></td>
-                            <td><strong>10,000 Monte Carlo Iterations</strong><br><span class="text-muted">Series A Startup Financials (Kaggle Benchmark)</span></td>
-                            <td><a href="https://github.com/Prasunnandi/business-decision-simulator" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> business-decision-simulator</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Analyzed authentic Series A financial scenarios in data/; captured interactive Tornado cha...</small></td>
-                            <td><small>Discovered that headcount expansion timing has a 2.5x larger variance impact on runway than marketing spe...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('business-decision-simulator')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
                             <td><span class="role-badge">🧪 QA & Chaos Testing</span><br><strong>Software Tester / QA Automation</strong></td>
                             <td><strong>92% Test Flakiness Reduction</strong><br><span class="text-muted">Kaggle Web App DOM Mutation Traces</span></td>
                             <td><a href="https://github.com/Prasunnandi/self-healing-test-automation" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> self-healing-test-automation</a></td>
@@ -2070,6 +2350,14 @@
                             <td><span class="evidence-tag">Screenshot + data/</span><br><small>Validated 12 interacting microservice contracts in data/; captured interactive contract co...</small></td>
                             <td><small>Discovered that contract tests must enforce strict semantic versioning checks on optional payload fields ...</small></td>
                             <td><button class="btn-matrix-view" onclick="openCaseStudy('consumer-contract-testing-grid')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🚛 Logistics & Enterprise</span><br><strong>Systems Architect / Workflow Engineer</strong></td>
+                            <td><strong>BPMN 2.0 State Machine</strong><br><span class="text-muted">Multi-Tier Corporate Workflows</span></td>
+                            <td><a href="https://github.com/Prasunnandi/enterprise-workflow-automation" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> enterprise-workflow-automation</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Demonstrated multi-tier corporate workflow execution in data/; captured visual React Flow ...</small></td>
+                            <td><small>Discovered that long-running workflows require deterministic state hydration; implemented snapshot versio...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('enterprise-workflow-automation')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
                             <td><span class="role-badge">🚛 Logistics & Enterprise</span><br><strong>Logistics & Enterprise / Full-Stack</strong></td>
@@ -2104,20 +2392,28 @@
                             <td><button class="btn-matrix-view" onclick="openCaseStudy('routewise-logistics-intelligence')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
-                            <td><span class="role-badge">🚛 Logistics & Enterprise</span><br><strong>Systems Architect / Workflow Engineer</strong></td>
-                            <td><strong>BPMN 2.0 State Machine</strong><br><span class="text-muted">Multi-Tier Corporate Workflows</span></td>
-                            <td><a href="https://github.com/Prasunnandi/enterprise-workflow-automation" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> enterprise-workflow-automation</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Demonstrated multi-tier corporate workflow execution in data/; captured visual React Flow ...</small></td>
-                            <td><small>Discovered that long-running workflows require deterministic state hydration; implemented snapshot versio...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('enterprise-workflow-automation')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
                             <td><span class="role-badge">🚛 Logistics & Enterprise</span><br><strong>Logistics & Enterprise / FinOps</strong></td>
                             <td><strong>3-Way Match & Maverick Detection</strong><br><span class="text-muted">Kaggle Corporate RFQ & Invoices Benchmark</span></td>
                             <td><a href="https://github.com/Prasunnandi/procureflow-procurement" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> procureflow-procurement</a></td>
                             <td><span class="evidence-tag">Screenshot + data/</span><br><small>Evaluated authentic corporate purchasing orders and invoices in data/; captured requisitio...</small></td>
                             <td><small>Identified that off-contract maverick spend was concentrated in recurring SaaS and office subscriptions; ...</small></td>
                             <td><button class="btn-matrix-view" onclick="openCaseStudy('procureflow-procurement')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🤖 AI & Machine Learning</span><br><strong>Multimedia Video & Doc Research Tool</strong></td>
+                            <td><strong>Timestamp-Accurate Video RAG</strong><br><span class="text-muted">Multi-Hour Video Lectures & PDF Corpus</span></td>
+                            <td><a href="https://github.com/Prasunnandi/agentic-rag-multimedia-orchestrator-" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> agentic-rag-multimodal-orchestrator</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Ingested 20+ hours of technical engineering lectures in data/; delivered sub-second ground...</small></td>
+                            <td><small>Discovered that technical audio transcripts contain phonetically misrecognized jargon (e.g. 'Kubernetes' ...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('agentic-rag-multimodal-orchestrator')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🤖 AI & Machine Learning</span><br><strong>Automated Code Review Assistant</strong></td>
+                            <td><strong>AST Semantic AST Diff & PR Review</strong><br><span class="text-muted">GitHub Pull Request Diffs (500+ PRs)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/ai-code-intelligence" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> ai-code-intelligence</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Tested across 500+ open-source GitHub pull request diffs; successfully detected missing er...</small></td>
+                            <td><small>Learned that providing full file context alongside diff hunks eliminated 90% of false-positive warnings, ...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('ai-code-intelligence')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
                             <td><span class="role-badge">🤖 AI & Machine Learning</span><br><strong>AI Engineer / Machine Learning</strong></td>
@@ -2168,36 +2464,60 @@
                             <td><button class="btn-matrix-view" onclick="openCaseStudy('Nagrik-Setu')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
-                            <td><span class="role-badge">⚙️ Distributed Systems & Core</span><br><strong>Fintech / Core Banking</strong></td>
-                            <td><strong>Cryptographic Audit Hash Chain</strong><br><span class="text-muted">10,000 Concurrent Multi-Currency Transfers</span></td>
-                            <td><a href="https://github.com/Prasunnandi/digital-wallet-ledger" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> digital-wallet-ledger</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Executed 10,000 concurrent multi-currency transfers in data/ with zero balance divergence;...</small></td>
-                            <td><small>Learned that pessimistic row locking causes high deadlocks under high concurrency; implemented determinis...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('digital-wallet-ledger')"><i class="fas fa-eye"></i> Details</button></td>
+                            <td><span class="role-badge">🌐 Full-Stack & Distributed</span><br><strong>Custom Search & Crawler System</strong></td>
+                            <td><strong>Sub-15ms BM25 Ranking Engine</strong><br><span class="text-muted">10,000 Web Pages Inverted Index</span></td>
+                            <td><a href="https://github.com/Prasunnandi/mini-search-engine" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> mini-search-engine</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Crawled and indexed 10,000+ web pages in local database; rendered interactive search UI wi...</small></td>
+                            <td><small>Learned that raw term frequency biases ranking toward spammy, repetitive documents; BM25 length normaliza...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('mini-search-engine')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
-                            <td><span class="role-badge">⚙️ Distributed Systems & Core</span><br><strong>Systems Engineer / Networking</strong></td>
-                            <td><strong>Concurrent HTTP Range Chunking</strong><br><span class="text-muted">Network Throughput Benchmark (Kaggle)</span></td>
-                            <td><a href="https://github.com/Prasunnandi/multithreaded-download-manager" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> multithreaded-download-manager</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Benchmark logs in data/ verified 3.8x download speedup over single-stream transfers; captu...</small></td>
-                            <td><small>Discovered that reassembling large files by in-memory concatenation exhausts RAM; stream-piped chunk file...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('multithreaded-download-manager')"><i class="fas fa-eye"></i> Details</button></td>
+                            <td><span class="role-badge">🌐 Full-Stack & Distributed</span><br><strong>Microservice Gateway & Dashboard</strong></td>
+                            <td><strong>Sliding Window Token Bucket Limiter</strong><br><span class="text-muted">Distributed Microservices Cluster Benchmark</span></td>
+                            <td><a href="https://github.com/Prasunnandi/mini-api-gateway" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> mini-api-gateway</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Benchmarked at 5,000 RPS with sub-5ms proxy overhead; captured real-time React admin dashb...</small></td>
+                            <td><small>Observed that connection keep-alive pooling between the gateway and downstream microservices reduced prox...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('mini-api-gateway')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
-                            <td><span class="role-badge">⚙️ Distributed Systems & Core</span><br><strong>Distributed Systems / Consensus</strong></td>
-                            <td><strong>Sub-50ms Leader Election</strong><br><span class="text-muted">Chaos Network Partition Benchmark</span></td>
-                            <td><a href="https://github.com/Prasunnandi/Distributed-Key-Value-Store-with-Raft-Consensus" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> Distributed-Key-Value-Store-with-Raft-Consensus</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Simulated asymmetric network partitions and killed active leaders in a 5-node cluster; ach...</small></td>
-                            <td><small>Realized that uncoordinated election timeouts trigger split votes; randomized election jitter between 150...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('Distributed-Key-Value-Store-with-Raft-Consensus')"><i class="fas fa-eye"></i> Details</button></td>
+                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Backend Engineer / Java Specialist</strong></td>
+                            <td><strong>Sub-5ms Cache-Aside Redirect</strong><br><span class="text-muted">Simulated High-Concurrency Traffic</span></td>
+                            <td><a href="https://github.com/Prasunnandi/url-shortener" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> url-shortener</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Simulated high-concurrency traffic in test benchmarks; achieved sub-5ms redirect resolutio...</small></td>
+                            <td><small>Observed cache stampede vulnerabilities when hot short-URLs expired; implemented probabilistic early expi...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('url-shortener')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
-                            <td><span class="role-badge">⚙️ Distributed Systems & Core</span><br><strong>Quantitative Developer / Systems</strong></td>
-                            <td><strong>Sub-Microsecond Matching</strong><br><span class="text-muted">Synthetic NASDAQ Level-2 Market Feed</span></td>
-                            <td><a href="https://github.com/Prasunnandi/Low-Latency-Limit-Order-Matching-Engine" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> Low-Latency-Limit-Order-Matching-Engine</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Stress-tested with 1,000,000 synthetic NASDAQ level-2 orders; achieved sustained throughpu...</small></td>
-                            <td><small>Discovered that CPU L1/L2 cache misses account for 70% of matching latency; restructured order structs to...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('Low-Latency-Limit-Order-Matching-Engine')"><i class="fas fa-eye"></i> Details</button></td>
+                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Full-Stack Engineer / E-Commerce</strong></td>
+                            <td><strong>Multi-Party Escrow Payment State Machine</strong><br><span class="text-muted">2,000-Item Catalog & Freight Benchmark</span></td>
+                            <td><a href="https://github.com/Prasunnandi/smart-business-marketplace" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> smart-business-marketplace</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Populated 2,000-item marketplace catalog in data/; captured storefront dashboard screensho...</small></td>
+                            <td><small>Learned that optimistic locking during checkout prevents inventory overselling when multiple buyers attem...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('smart-business-marketplace')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Full-Stack Engineer / Creator Tech</strong></td>
+                            <td><strong>Time-Expiring Signed URL Delivery</strong><br><span class="text-muted">Kaggle Creator Deals & Sponsorships</span></td>
+                            <td><a href="https://github.com/Prasunnandi/creator-business-manager" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> creator-business-manager</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Logged authentic digital course sales history in data/; captured creator analytics dashboa...</small></td>
+                            <td><small>Discovered that webhook delivery is at-least-once; implemented idempotent event processing by recording p...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('creator-business-manager')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Frontend / Developer Tooling</strong></td>
+                            <td><strong>Dynamic JSON Schema AST Engine</strong><br><span class="text-muted">Enterprise Survey Response Benchmark</span></td>
+                            <td><a href="https://github.com/Prasunnandi/formcraft-drag-drop-builder" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> formcraft-drag-drop-builder</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Tested across enterprise survey schemas in data/; captured builder canvas screenshot with ...</small></td>
+                            <td><small>Observed that deeply nested conditional logic rules can introduce circular dependency deadlocks; implemen...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('formcraft-drag-drop-builder')"><i class="fas fa-eye"></i> Details</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Full-Stack / Security & Cryptography</strong></td>
+                            <td><strong>Client-Side AES-256-GCM Zero-Knowledge</strong><br><span class="text-muted">Encrypted Transfer Audit Logs (Kaggle)</span></td>
+                            <td><a href="https://github.com/Prasunnandi/filebridge-secure-sharing" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> filebridge-secure-sharing</a></td>
+                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Processed encrypted file transfer audit logs in data/; captured shared files grid screensh...</small></td>
+                            <td><small>Learned that running multi-gigabyte cryptographic operations on the main thread causes UI freezes; offloa...</small></td>
+                            <td><button class="btn-matrix-view" onclick="openCaseStudy('filebridge-secure-sharing')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                         <tr>
                             <td><span class="role-badge">☁️ Cloud, DevOps & SRE</span><br><strong>DevOps / SRE Architect</strong></td>
@@ -2238,46 +2558,6 @@
                             <td><span class="evidence-tag">Screenshot + data/</span><br><small>Streamed authentic mobile game telemetry logs in data/; captured streaming canvas chart sc...</small></td>
                             <td><small>Learned that updating React state on every incoming WebSocket message chokes the main browser UI thread; ...</small></td>
                             <td><button class="btn-matrix-view" onclick="openCaseStudy('liveops-realtime-dashboard')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Full-Stack Engineer / E-Commerce</strong></td>
-                            <td><strong>Multi-Party Escrow Payment State Machine</strong><br><span class="text-muted">2,000-Item Catalog & Freight Benchmark</span></td>
-                            <td><a href="https://github.com/Prasunnandi/smart-business-marketplace" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> smart-business-marketplace</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Populated 2,000-item marketplace catalog in data/; captured storefront dashboard screensho...</small></td>
-                            <td><small>Learned that optimistic locking during checkout prevents inventory overselling when multiple buyers attem...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('smart-business-marketplace')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Full-Stack Engineer / Creator Tech</strong></td>
-                            <td><strong>Time-Expiring Signed URL Delivery</strong><br><span class="text-muted">Kaggle Creator Deals & Sponsorships</span></td>
-                            <td><a href="https://github.com/Prasunnandi/creator-business-manager" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> creator-business-manager</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Logged authentic digital course sales history in data/; captured creator analytics dashboa...</small></td>
-                            <td><small>Discovered that webhook delivery is at-least-once; implemented idempotent event processing by recording p...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('creator-business-manager')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Frontend / Developer Tooling</strong></td>
-                            <td><strong>Dynamic JSON Schema AST Engine</strong><br><span class="text-muted">Enterprise Survey Response Benchmark</span></td>
-                            <td><a href="https://github.com/Prasunnandi/formcraft-drag-drop-builder" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> formcraft-drag-drop-builder</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Tested across enterprise survey schemas in data/; captured builder canvas screenshot with ...</small></td>
-                            <td><small>Observed that deeply nested conditional logic rules can introduce circular dependency deadlocks; implemen...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('formcraft-drag-drop-builder')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Full-Stack / Security & Cryptography</strong></td>
-                            <td><strong>Client-Side AES-256-GCM Zero-Knowledge</strong><br><span class="text-muted">Encrypted Transfer Audit Logs (Kaggle)</span></td>
-                            <td><a href="https://github.com/Prasunnandi/filebridge-secure-sharing" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> filebridge-secure-sharing</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Processed encrypted file transfer audit logs in data/; captured shared files grid screensh...</small></td>
-                            <td><small>Learned that running multi-gigabyte cryptographic operations on the main thread causes UI freezes; offloa...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('filebridge-secure-sharing')"><i class="fas fa-eye"></i> Details</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge">🌐 Full-Stack & Developer Tools</span><br><strong>Backend Engineer / Java Specialist</strong></td>
-                            <td><strong>Sub-5ms Cache-Aside Redirect</strong><br><span class="text-muted">Simulated High-Concurrency Traffic</span></td>
-                            <td><a href="https://github.com/Prasunnandi/url-shortener" target="_blank" class="table-repo-link"><i class="fab fa-github"></i> url-shortener</a></td>
-                            <td><span class="evidence-tag">Screenshot + data/</span><br><small>Simulated high-concurrency traffic in test benchmarks; achieved sub-5ms redirect resolutio...</small></td>
-                            <td><small>Observed cache stampede vulnerabilities when hot short-URLs expired; implemented probabilistic early expi...</small></td>
-                            <td><button class="btn-matrix-view" onclick="openCaseStudy('url-shortener')"><i class="fas fa-eye"></i> Details</button></td>
                         </tr>
                             </tbody>
                         </table>
