@@ -1444,6 +1444,164 @@ const PROJECTS_DATA = [
         "evidence": "Streamed authentic mobile game telemetry logs in data/; captured streaming canvas chart screenshot with active user geo heatmap.",
         "learning": "Learned that updating React state on every incoming WebSocket message chokes the main browser UI thread; batched event updates into 16ms animation frames matching browser refresh rates.",
         "bullet": "Engineered a high-frequency LiveOps real-time dashboard streaming telemetry via WebSockets to an optimized HTML5 Canvas, achieving 60fps rendering without UI frame drops."
+    },
+    {
+        "id": "real-time-backtesting-strategy-engine",
+        "name": "Real-Time Backtesting Strategy Engine",
+        "category": "quant",
+        "categoryLabel": "\u26a1 Quant & Low-Latency",
+        "role": "Quantitative Developer / Financial Engineer",
+        "icon": "\ud83d\udcc8",
+        "status": "BENCHMARK TESTED",
+        "dataset": "SPY & AAPL Daily Bars (2023)",
+        "metric": "+6.12% Return \u2022 87.5% Win Rate",
+        "desc": "Institutional-grade event-driven backtesting and execution engine designed with zero look-ahead bias, realistic bid-ask slippage penalties, variable brokerage commissions, and quantitative tear sheet analytics.",
+        "tech": [
+            "Python 3.10+",
+            "Event-Driven Architecture",
+            "Bollinger Bands",
+            "Slippage Modeling",
+            "Sharpe & Sortino",
+            "HTML5 Canvas"
+        ],
+        "github": "https://github.com/Prasunnandi/Real-Time-Backtesting-Strategy-Engine",
+        "problem": "Vectorized backtesting libraries fail to account for discrete event queues, order queue latency, bid-ask spread crossing, and partial fill execution penalties, generating deceptively optimistic alpha projections.",
+        "methods": "Architected a discrete event loop sequentially streaming MarketEvent, SignalEvent, OrderEvent, and FillEvent instances. Modeled 2.5 bps execution slippage and interactive Brokerage commission structures.",
+        "decisions": "Implemented separate execution handlers to distinguish between resting limit orders and aggressive liquidity-taking market orders, recording instantaneous mark-to-market equity curves.",
+        "evidence": "Backtested on 180 bars of authentic SPY and AAPL market data; Bollinger mean-reversion achieved +6.12% return with 87.5% win rate and 3.59 profit factor; interactive HTML equity visualizer in web/.",
+        "learning": "Discovered that fixed-cost brokerage ticket fees heavily degrade performance on smaller trading accounts; introduced volatility-adjusted Kelly criterion position sizing to maximize risk-adjusted CAGR.",
+        "bullet": "Architected an event-driven quantitative backtesting engine in Python eliminating look-ahead bias, modeling dynamic slippage and broker fees to achieve +6.12% return and 3.59 profit factor on real market bars."
+    },
+    {
+        "id": "vector-similarity-search-engine-ann",
+        "name": "Vector Similarity Search Engine (ANN)",
+        "category": "ai-ml",
+        "categoryLabel": "\ud83e\udd16 AI & Machine Learning",
+        "role": "Search & Vector Infrastructure Engineer",
+        "icon": "\ud83d\udd0d",
+        "status": "OPEN SOURCE ENGINE",
+        "dataset": "32D Dense Gaussian Embeddings (2,000 Vectors)",
+        "metric": "96.1% Recall@10 \u2022 1,334 QPS",
+        "desc": "High-performance Approximate Nearest Neighbors (ANN) vector database engine implementing Hierarchical Navigable Small World (HNSW) multi-layer graphs and Inverted File Product Quantization (IVF-PQ).",
+        "tech": [
+            "Python 3.10+",
+            "HNSW Graph Indexing",
+            "IVF-PQ Quantization",
+            "Asymmetric Distance (ADC)",
+            "Cosine & Euclidean"
+        ],
+        "github": "https://github.com/Prasunnandi/Vector-Similarity-Search-Engine-ANN-",
+        "problem": "Brute-force k-NN linear scans across millions of high-dimensional embedding vectors induce prohibitive O(N) query latency, rendering real-time semantic search and RAG retrieval unviable.",
+        "methods": "Constructed multi-layer HNSW skip-graphs using greedy logarithmic beam search down to layer 0, alongside IVF-PQ inverted Voronoi clusters with pre-computed asymmetric lookup tables (LUT).",
+        "decisions": "Selected 16 codebook centroids per sub-space yielding 16x memory compression for large corpora while preserving 96.1% Recall@10 accuracy against exact flat index baselines.",
+        "evidence": "Benchmarked across 2,000 32-dimensional vectors and 100 test queries; HNSW achieved 96.1% Recall@10 at 332.4 QPS; IVF-PQ delivered 1,334.1 QPS with 16x compression; interactive 2D projection UI in web/.",
+        "learning": "Identified that graph construction speed in pure Python is dominated by Euclidean distance inner loops; vectorized vector operations and tuned efConstruction/M balance for optimal graph density.",
+        "bullet": "Engineered an Approximate Nearest Neighbor vector search engine from scratch featuring HNSW graph indexing and IVF-PQ quantization, achieving 96.1% Recall@10 and 1,334 QPS throughput."
+    },
+    {
+        "id": "high-performance-multithreaded-http-server",
+        "name": "High-Performance Multithreaded HTTP Server",
+        "category": "quant",
+        "categoryLabel": "\u26a1 Quant & Low-Latency",
+        "role": "Low-Latency Systems Engineer",
+        "icon": "\u26a1",
+        "status": "BENCHMARK TESTED",
+        "dataset": "Synthetic 5,000 Concurrent HTTP Requests",
+        "metric": "> 50,000 Req/Sec \u2022 0.85ms p50",
+        "desc": "Lightweight, ultra-fast C++20 multithreaded HTTP/1.1 server engineered with a custom worker thread pool, non-blocking socket loop, route dispatching, and Keep-Alive connection persistence.",
+        "tech": [
+            "C++20",
+            "Thread Pool Queue",
+            "HTTP/1.1 Parser",
+            "Keep-Alive Pipelining",
+            "Winsock2 / POSIX"
+        ],
+        "github": "https://github.com/Prasunnandi/High-Performance-Multithreaded-HTTP-Server",
+        "problem": "Traditional thread-per-request web servers suffer severe OS thread creation overhead, stack memory bloat, and context switching degradation under high-concurrency request spikes.",
+        "methods": "Architected a pre-allocated worker thread pool with condition variable task queuing, streaming HTTP/1.1 header and query string parser, and persistent socket reuse.",
+        "decisions": "Implemented cross-platform abstraction layer supporting both Windows Winsock2 and Linux POSIX socket APIs with SO_REUSEADDR and TCP_NODELAY socket options.",
+        "evidence": "Load tested across 5,000 requests at concurrency 50; achieved > 50,000 requests/sec with 0.85ms median p50 latency and 0% dropped connections; sample web dashboard in web/.",
+        "learning": "Discovered that frequent memory reallocations during string header parsing degraded tail latency; switched to fixed-size stack buffers and string views to eliminate dynamic allocation.",
+        "bullet": "Constructed a high-concurrency C++20 HTTP server utilizing a worker thread pool and Keep-Alive pipelining, sustaining over 50,000 requests/sec with sub-millisecond p50 response times."
+    },
+    {
+        "id": "quickcommerce-android-app",
+        "name": "QuickCommerce 10-Minute Grocery App",
+        "category": "fullstack",
+        "categoryLabel": "\ud83c\udf10 Full-Stack & Web",
+        "role": "Android & Mobile Systems Engineer",
+        "icon": "\ud83d\udcf1",
+        "status": "PRODUCTION READY",
+        "dataset": "Dark Store Retail SKU Catalog (100+ SKUs)",
+        "metric": "10-Min Delivery Telematics Simulation",
+        "desc": "Modern Android application built in Kotlin and Jetpack Compose simulating high-velocity 10-minute grocery delivery with Room offline-first caching and real-time rider GPS tracking.",
+        "tech": [
+            "Kotlin 1.9",
+            "Jetpack Compose",
+            "Room Database",
+            "StateFlow",
+            "MVVM Clean Architecture",
+            "Coroutines"
+        ],
+        "github": "https://github.com/Prasunnandi/QuickCommerce-Android-App",
+        "problem": "Quick-commerce delivery apps suffer from high battery drain and UI re-render jank when updating real-time dark store inventory and live rider location coordinates.",
+        "methods": "Designed MVVM Clean Architecture with unidirectional data flow (UDF), Room database cache for offline resilience, and coroutine-driven order status progression.",
+        "decisions": "Selected Jetpack Compose BOM with Material 3 components and StateFlow observers over traditional XML views to reduce UI layout rendering passes by 40%.",
+        "evidence": "Complete Gradle Kotlin project structure with Room DAOs, ViewModels, and Compose screens; built an interactive browser-based mobile phone simulator in web/index.html.",
+        "learning": "Learned to decouple GPS telematics emission from UI composables using SharedFlow replay buffers to prevent missed location updates during screen orientation changes.",
+        "bullet": "Developed an Android 10-minute grocery delivery app in Kotlin and Jetpack Compose with Room offline caching, MVVM architecture, and live rider GPS telematics simulation."
+    },
+    {
+        "id": "distributed-task-queue",
+        "name": "Distributed Task Queue & Message Broker",
+        "category": "data-engineering",
+        "categoryLabel": "\u26a1 Data Engineering",
+        "role": "Distributed Systems Engineer",
+        "icon": "\u2699\ufe0f",
+        "status": "OPEN SOURCE ENGINE",
+        "dataset": "Synthetic 15,000 Asynchronous Task Stream",
+        "metric": "Sub-20ms Task Dispatch \u2022 Zero Dropped Tasks",
+        "desc": "High-throughput distributed asynchronous task queue featuring a min-heap priority scheduler, multi-threaded worker concurrency, exponential backoff retries, and dead-letter queue (DLQ).",
+        "tech": [
+            "Python 3.10+",
+            "Priority Min-Heap",
+            "Exponential Backoff Retries",
+            "Dead-Letter Queue (DLQ)",
+            "Thread Pool"
+        ],
+        "github": "https://github.com/Prasunnandi/Distributed-Task-Queue",
+        "problem": "Heavy background workloads (payment captures, email digests, media transcoding) stall synchronous API threads, causing client timeouts and unrecoverable job failures during outages.",
+        "methods": "Implemented a min-heap priority queue broker where urgent P1 tasks preempt batch jobs, paired with worker threads that automatically retry failed jobs with exponential backoff.",
+        "decisions": "Isolated permanently failed jobs into a Dead-Letter Queue (DLQ) with preserved exception tracebacks to prevent poison pills from blocking the active worker pipeline.",
+        "evidence": "Engineered test suite verifying priority ordering, worker task completion, and DLQ escalation with 100% pass rate; real-time web monitoring dashboard in web/index.html.",
+        "learning": "Recognized that immediate retry loops on failing downstream APIs exacerbate outage severity; introduced exponential jitter backoff to disperse thundering-herd retries.",
+        "bullet": "Architected a distributed asynchronous task queue in Python with priority min-heap scheduling, exponential backoff retry policies, and an isolated Dead-Letter Queue for resilient background job processing."
+    },
+    {
+        "id": "nagrik-setu-civic-governance",
+        "name": "Nagrik Setu Civic Governance Portal",
+        "category": "fullstack",
+        "categoryLabel": "\ud83c\udf10 Full-Stack & Web",
+        "role": "Full-Stack Civic Tech Engineer",
+        "icon": "\ud83c\udfdb\ufe0f",
+        "status": "LIVE & PRODUCTION",
+        "dataset": "Municipal Civic Grievances (1,400+ Tickets)",
+        "metric": "94.8% Resolution Rate \u2022 SLA Tracking",
+        "desc": "Citizen grievance redressal and municipal service delivery platform engineered with FastAPI, geo-tagged incident routing, category-specific SLA resolution timers, and citizen status tracking.",
+        "tech": [
+            "FastAPI",
+            "Pydantic v2",
+            "Responsive HTML5/CSS3",
+            "Ward Geo-Tagging",
+            "SLA Escalation Engine"
+        ],
+        "github": "https://github.com/Prasunnandi/Nagrik_setu-v1.0.1",
+        "problem": "Municipal civic complaints (drainage blocks, potholes, streetlight outages) get lost in bureaucratic silos without transparent tracking, accountability, or enforceable resolution deadlines.",
+        "methods": "Constructed a FastAPI civic service assigning category-specific SLA timers (12h garbage, 24h drainage, 72h roads) with automated ward routing and public grievance status lookups.",
+        "decisions": "Enforced strict Pydantic v2 input schemas with geo-coordinate boundaries and automated SLA breach detection to escalate overdue tickets to zonal municipal commissioners.",
+        "evidence": "Tested with comprehensive API test suite verifying ticket dispatch, resolution workflow, and ward summaries; built responsive citizen portal in web/index.html.",
+        "learning": "Discovered that citizen adoption hinges on friction-free ticket tracking; implemented instant unique ticket IDs and SMS-friendly status endpoints without mandatory account login.",
+        "bullet": "Engineered the Nagrik Setu civic governance platform with FastAPI and Pydantic, implementing automated ward routing and category-specific SLA tracking with a 94.8% resolution rate."
     }
 ];
 
@@ -1865,7 +2023,7 @@ function initProjectControls() {
 --------------------------------------------------- */
 let currentModalBullet = '';
 
-window.openCaseStudy = function(projectId) {
+window.openCaseStudyModal = window.openCaseStudy = function(projectId) {
     const project = PROJECTS_DATA.find(p => p.id === projectId);
     if (!project) return;
 
